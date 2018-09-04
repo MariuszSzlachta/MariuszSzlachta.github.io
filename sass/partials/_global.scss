@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.section {
+  &__title {
+    margin: 0;
+    padding-bottom: 0;
+    font-family: $secondary-font;
+    font-size: 4rem;
+    line-height: 6.5rem;
+    font-weight: 400;
+  }
+  &__subtitle {
+    margin-bottom: 0;
+    font-family: $primary-font;
+    font-size: 1.4rem;
+    line-height: 4;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+

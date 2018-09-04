@@ -1,0 +1,21 @@
+.jumbotron {
+  height: 100vh;
+  background: $background-1 url('../images/jumbo-test.jpg') no-repeat;
+  background-size: cover;
+  &__title {
+    margin-bottom: 1rem;
+    font-family: $secondary-font;
+    font-size: 4.8rem;
+    color: $light-text;
+  }
+  &__subtitle {
+    display: block;
+    color: $primary-color;
+  }
+  &__text {
+    margin-top: 0;
+    font-family: $secondary-font;
+    font-size: 3rem;
+    color: $light-text;
+  }
+}
