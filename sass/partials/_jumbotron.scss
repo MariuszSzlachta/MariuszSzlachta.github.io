@@ -1,6 +1,7 @@
 .jumbotron {
+  position: relative;
   height: 100vh;
-  background: $background-1 url('../images/jumbo-test.jpg') no-repeat;
+  background: $black url('../images/jumbo-test.jpg') no-repeat;
   background-size: cover;
   &__title {
     margin-bottom: 1rem;
@@ -17,5 +18,96 @@
     font-family: $secondary-font;
     font-size: 3rem;
     color: $light-text;
+  }
+  .container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .jumbotron {
+    background-position: 30% 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .jumbotron {
+    background-position: 50% center;
+  }
+}
+
+@media (max-width: 992px) {
+  .jumbotron {
+    background-position: -70px top;
+    &__title {
+      font-size: 3rem;
+    }
+    &__text {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//   .jumbotron {
+//     .container {
+//       justify-content: flex-end;
+//     }
+//   }
+// }
+@media (max-width: 768px) {
+  .jumbotron {
+    &__navbar {
+      display: none;
+    }
+    &__title {
+      line-height: 1.5;
+    }
+    .container {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .jumbotron {
+    .container {
+      justify-content: flex-end;
+    }
+    [class*='col-'] {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .jumbotron {
+    background-position: -90px top;
+    &__title {
+      margin-top: 0;
+      margin-bottom: 2.4rem;
+      font-size: 2.4rem;
+      line-height: 1.5;
+    }
+    &__text {
+      display: none;
+      margin-bottom: 0;
+      font-size: 1.8rem;
+    }
+    &__link {
+      bottom: 6px;
+      left: 12px;
+    }
+    .icon::before {
+      transform: translateX(90px);
+    }
+    .outer {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .container {
+      justify-content: flex-end;
+    }
   }
 }
