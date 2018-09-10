@@ -1,0 +1,52 @@
+.about-me {
+  background-color: $background-2;
+}
+
+.article {
+  padding: 10rem;
+  &__title {
+    position: relative;
+    display: flex;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 4rem;
+    padding-bottom: 0;
+    font-family: $primary-font;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      width: 100px;
+      background-color: $primary-color;
+    }
+    &::before {
+      left: -130px;
+    }
+    &::after {
+      right: -130px;
+    }
+  }
+  &__content {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-size: 1.6rem;
+    line-height: 2;
+    text-indent: 3.5rem;
+    color: $light-text;
+    &:first-child {
+      &:first-letter {
+        font-size: 3rem;
+        line-height: 1;
+        color: $primary-color;
+      }
+    }
+  }
+}

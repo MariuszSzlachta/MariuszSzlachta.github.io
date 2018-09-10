@@ -17,6 +17,10 @@
   flex-direction: row;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;

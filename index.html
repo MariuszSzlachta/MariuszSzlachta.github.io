@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,49 @@
   <title>Mariusz Szlachta</title>
 </head>
 <body>
+  <nav class="nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-xs-4">
+          <div class="brand">
+            <a href="#" class="brand__link">
+              <img src="images/logo.png" alt="Logo" class="brand__image">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-11 col-xs-8 flex-row flex-end">
+          <ul class="main-nav">
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link link">
+                <span class="link__mask mask">
+                  <span class="mask__text">O mnie</span>
+                </span>
+                <span class="link__text">O mnie</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link link">
+                <span class="link__mask mask">
+                  <span class="mask__text">Projekty</span>
+                </span>
+                <span class="link__text">Projekty</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link link">
+                <span class="link__mask mask">
+                  <span class="mask__text">Contact</span>
+                </span>
+                <span class="link__text">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
   <header class="jumbotron">
     <div class="container flex-col flex-full">
       <div class="row row--full-width">
@@ -18,23 +61,22 @@
           <h1 class="jumbotron__title">Mariusz Szlachta
             <span class="jumbotron__subtitle">Junior Web Developer</span>
           </h1>
-          <p class="jumbotron__text">Let me introduce myself...</p>
           <ul class="jumbotron__navbar navbar">
 
             <li class="navbar__item">
               <a href="" class="navbar__link link">
                 <span class="link__mask mask">
-                  <span class="mask__text">About me</span>
+                  <span class="mask__text">O mnie</span>
                 </span>
-                <span class="link__text">About me</span>
+                <span class="link__text">O mnie</span>
               </a>
             </li>
             <li class="navbar__item">
               <a href="" class="navbar__link link">
                 <span class="link__mask mask">
-                  <span class="mask__text">My projects</span>
+                  <span class="mask__text">Projekty</span>
                 </span>
-                <span class="link__text">My projects</span>
+                <span class="link__text">Projekty</span>
               </a>
             </li>
             <li class="navbar__item">
@@ -51,11 +93,26 @@
       </div>
       <a href="" class="link link--absolute jumbotron__link">
         <span class="mask">
-          <span class="mask__text">Get in touch <i class="link__icon icon icon-arrow-right"></i></span>
+          <span class="mask__text">Kontakt<i class="link__icon icon icon-arrow-right"></i></span>
         </span>
-        <span class="link__text">Get in touch <i class="link__icon icon icon-arrow-right"></i></span>
+        <span class="link__text">Kontakt<i class="link__icon icon icon-arrow-right"></i></span>
       </a>
     </div>
   </header>
+  <article id="about-me" class="article about-me">
+    <div class="container flex-col">
+      <h2 class="article__title">O mnie</h2>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <img src="" alt="My foto" class="article__image">
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <p class="article__content">Mam na imię Mariusz, jestem ambitnym web developerem z kreatywnym podejściem do rozwiązywania problemów i sporą dozą poczucia humoru. Tworzenie aplikacji i stron internetowych daje mi wielką satysfakcję. Uwielbiam poszerzać swoje horyzonty i uczucie towarzyszące zrozumieniu kolejnego skomplikowanego zagadnienia. </p>
+          <p class="article__content">Jestem absolwentem bootcamp'u Web Developer organizowanego przez Kodillę, podczas którego mogłem zbudować solidne fundamenty w zakresie tworzenia aplikacji w oparciu o najpopularniejsze technologie języka Javascript. Pokochałem rozwiązania jakie daje ReactJS, zarządzanie stanem aplikacji za pomocą Redux. SASS w składni SCSS stał się moim przyjacielem, a automatyzacja zadań za pomocą npm i budowanie aplikacji za pomocą webpack'a jest niemalże nieodzownym standardem w mojej pracy. Wspaniałe jest to, że podczas bootcamp'u mogłem zaznajomić się również z technologiami backendowymi m. in. MongoDB z Mongoose, Node.js, Express. Jednakże najcenniejszą rzeczą jakiej się nauczyłem to, <em>że dla chcącego nic trudnego.</em></p>
+          <p class="article__content">Obecnie poszukuję pracy, w której będę zaangażowany w ambitne i ciekawe projekty. Pragnę nieustannie się rozwijać i uczyć od bardziej doświadczonych członków zespołu. Zapraszam Cię do zapoznania się z najciekawszym zrealizowanymi przeze mnie projektami.</p>
+        </div>
+      </div>
+    </div>
+  </article>
 </body>
 </html>
