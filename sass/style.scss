@@ -2,10 +2,12 @@
 @import 'partials/_grid.scss';
 @import 'partials/_variables.scss';
 @import 'partials/_global.scss';
+@import 'partials/_animations.scss';
 
 // components
-@import 'partials/_navbars.scss';
+@import 'partials/_hamburger.scss';
 
 // sections
+@import 'partials/_navbar.scss';
 @import 'partials/_jumbotron.scss';
 @import 'partials/_about.scss';

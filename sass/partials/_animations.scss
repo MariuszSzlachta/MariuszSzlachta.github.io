@@ -1,0 +1,57 @@
+// Link animations
+
+.link {
+  &:hover .link__rect {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 764;
+    stroke: $light-text;
+  }
+  &:hover .link__text {
+    color: $primary-color;
+  }
+  &__text {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    transition: color 0.7s ease-in-out;
+  }
+  &__svg,
+  &__rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+  }
+  &__rect {
+    stroke: $primary-color;
+    stroke-width: 4;
+    transition: 0.7s ease-in-out;
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 264;
+  }
+  &__icon {
+    margin-left: 5px;
+    vertical-align: sub;
+    color: $primary-color;
+  }
+}
+
+@media (max-width: 992px) {
+  .link {
+    &:hover .link__rect {
+      stroke-dasharray: 100, 400;
+      stroke-dashoffset: 645;
+      stroke: $light-text;
+    }
+    &__rect {
+      stroke: $primary-color;
+      stroke-width: 4;
+      transition: 0.7s ease-in-out;
+      stroke-dasharray: 100, 400;
+      stroke-dashoffset: 145;
+    }
+  }
+}
