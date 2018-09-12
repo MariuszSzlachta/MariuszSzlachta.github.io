@@ -1,0 +1,108 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  background-color: black;
+  overflow: hidden;
+  &__group{
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 2rem 0;
+  }
+  &__label{
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    width: 100%;
+    &--textarea {
+      bottom: 44px;
+      &::before,
+      &::after {
+        bottom: -60px;
+      }
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -44px;
+      left: 0;
+      width: calc(100% - 40px);
+      height: 1px;
+      transition: transform 3s ease-in-out;
+    }
+    &::before {
+      background-color: $pera-text;
+    }
+    &::after {
+      transition: width 0.3s ease-in-out;
+      background-color: $primary-color;
+      width: 0;
+    }
+  }
+  &__input,
+  &__textarea {
+    position: relative;
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 6rem;
+    color: $light-text;
+    background-color: transparent;
+    &:focus + .label .label__text {
+      transform: scale(0.8) translate3d(-0.5rem, -2rem, 0);
+      color: $primary-color;
+    }
+    &:focus + .contact-form__label::after {
+      width: calc(100% - 40px);
+    }
+  }
+  &__inner {
+    justify-content: center;
+  }
+  &__submit {
+    border: none;
+    margin-top: 6rem;
+    padding: 0;
+    width: 200px;
+    height: 52px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $dark-text;
+    background-color: $primary-color;
+    cursor: pointer;
+    &:hover .contact-form__icon,
+    &:focus .contact-form__icon {
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: sub;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+
+.label__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $light-text;
+  transition: 0.3s ease-in-out;
+  &--textarea {
+    top: -36px;
+  }
+}

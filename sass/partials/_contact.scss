@@ -1,8 +1,5 @@
-.about-me {
-  background-color: $background-2;
-}
-
-.article {
+.footer {
+  background: $background-1;
   padding: 10rem 0;
   &__title {
     position: relative;
@@ -33,36 +30,5 @@
     &::after {
       right: -130px;
     }
-  }
-  &__content {
-    margin-top: 0;
-    margin-bottom: 0.7rem;
-    font-size: 1.6rem;
-    line-height: 2;
-    text-indent: 3.5rem;
-    color: $light-text;
-    &:first-child {
-      &:first-letter {
-        font-size: 3rem;
-        line-height: 1;
-        color: $primary-color;
-      }
-    }
-    &--em {
-      color: $primary-color;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .article__title::before,
-  .article__title::after {
-    width: 50px;
-  }
-  .article__title::before {
-    left: -65px;
-  }
-  .article__title::after {
-    right: -65px;
   }
 }

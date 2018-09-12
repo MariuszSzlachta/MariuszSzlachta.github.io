@@ -78,12 +78,46 @@
           <img src="" alt="My foto" class="article__image">
         </div>
         <div class="col-lg-8 col-sm-12">
-          <p class="article__content">Mam na imię Mariusz, jestem ambitnym web developerem z&nbsp; kreatywnym podejściem do rozwiązywania problemów i&nbsp;sporą dozą poczucia humoru. Tworzenie aplikacji i&nbsp;stron internetowych daje mi wielką satysfakcję. Uwielbiam poszerzać swoje horyzonty i&nbsp;uczucie towarzyszące zrozumieniu kolejnego skomplikowanego zagadnienia. </p>
-          <p class="article__content">Jestem absolwentem bootcamp'u Web Developer organizowanego przez Kodillę, podczas którego mogłem zbudować solidne fundamenty w&nbsp;zakresie tworzenia aplikacji w&nbsp;oparciu o&nbsp;najpopularniejsze technologie języka Javascript. W swoich projektach chętnie korzystam z&nbsp;rozwiązań jakie daje ReactJS oraz zarządzanie stanem aplikacji za pomocą Redux. SASS w składni SCSS stał się moim przyjacielem, a&nbsp;automatyzacja zadań za pomocą npm i&nbsp;budowanie aplikacji za pomocą webpack'a jest niemalże nieodzownym standardem w mojej pracy. Wspaniałe jest to, że&nbsp;podczas bootcamp'u mogłem zaznajomić się również z&nbsp;technologiami backendowymi m.&nbsp;in. MongoDB z&nbsp;Mongoose, Node.js, Express. Jednakże najcenniejszą rzeczą jakiej się nauczyłem to, <em>że dla chcącego nic trudnego.</em></p>
-          <p class="article__content">Obecnie poszukuję pracy, w&nbsp;której będę zaangażowany w&nbsp;ambitne i&nbsp;ciekawe projekty. Chcę nieustannie się rozwijać i&nbsp;uczyć od bardziej doświadczonych członków zespołu. Zapraszam Cię&nbsp;do zapoznania się z&nbsp;najciekawszym zrealizowanymi przeze mnie projektami.</p>
+          <p class="article__content">Mam na imię Mariusz, jestem ambitnym web developerem z&nbsp; kreatywnym podejściem do&nbsp;rozwiązywania problemów i&nbsp;sporą dozą poczucia humoru. Tworzenie aplikacji i&nbsp;stron internetowych daje mi wielką satysfakcję. Uwielbiam poszerzać swoje horyzonty i&nbsp;uczucie towarzyszące zrozumieniu kolejnego skomplikowanego zagadnienia. </p>
+          <p class="article__content">Jestem absolwentem bootcamp'u Web Developer organizowanego przez Kodillę, podczas którego mogłem zbudować solidne fundamenty w&nbsp;zakresie tworzenia aplikacji w&nbsp;oparciu o&nbsp;najpopularniejsze technologie języka Javascript. W swoich projektach chętnie korzystam z&nbsp;rozwiązań jakie daje ReactJS oraz zarządzanie stanem aplikacji za&nbsp;pomocą Redux. SASS w&nbsp;składni SCSS stał się moim przyjacielem, a&nbsp;automatyzacja zadań za&nbsp;pomocą npm i&nbsp;budowanie aplikacji za&nbsp;pomocą webpack'a jest niemalże nieodzownym standardem w mojej pracy. Wspaniałe jest to, że&nbsp;podczas bootcamp'u mogłem zaznajomić się również z&nbsp;technologiami backendowymi m.&nbsp;in. MongoDB z&nbsp;Mongoose, Node.js, Express. Jednakże najcenniejszą rzeczą jakiej się nauczyłem to, <em class="article__content article__content--em">że dla chcącego nic trudnego.</em></p>
+          <p class="article__content">Obecnie poszukuję pracy, w&nbsp;której będę zaangażowany w&nbsp;ambitne i&nbsp;ciekawe projekty. Chcę nieustannie się rozwijać i&nbsp;uczyć od&nbsp;bardziej doświadczonych członków zespołu. Zapraszam Cię do&nbsp;zapoznania się z&nbsp;najciekawszym zrealizowanymi przeze mnie projektami.</p>
         </div>
       </div>
     </div>
   </article>
+  <footer id ="contact" class="footer contact">
+    <div class="container flex-col">
+      <h2 class="footer__title">Contact me</h2>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0">
+          <form action="action="https://formspree.io/your@email.com" method="POST"" class="contact-form">
+            <div class="row row--full-width contact-form__inner">
+                <div class="col-lg-6 col-sm-12 contact-form__group">
+                  <input id="input-name "type="text" name="name" class="contact-form__input">
+                  <label for="input-name" class="contact-form__label label"><span class="label__text">Your name</span></label>
+                </div>
+                <div class="col-lg-6 col-sm-12 contact-form__group">
+                  <input id="input-email" type="email" name="_replyto" class="contact-form__input">
+                  <label for="input-email" class="contact-form__label label"><span class="label__text">Your email</span></label>
+                </div>
+                <div class="col-lg-12 contact-form__group">
+                  <input id="input-subject" type="text" class="contact-form__input">
+                  <label for="input-subject" class="contact-form__label label"><span class="label__text">Subject</span></label>
+                </div>
+                <div class="col-lg-12 contact-form__group">
+                  <textarea name="message" id="input-message" cols="30" rows="2" class="contact-form__textarea"></textarea>
+                  <label for="input-message" class="contact-form__label label contact-form__label--textarea"><span class="label__text label__text--textarea">Your message</span></label>
+                </div>
+                <button class="contact-form__submit submit">
+                  <span class="submit__text">Get in touch</span>
+                  <i class=" contact-form__icon icon icon-arrow-right"></i>
+                </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </h2>
+    </div>
+  </footer>
 </body>
 </html>
