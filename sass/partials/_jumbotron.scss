@@ -36,9 +36,16 @@
   color: $pera-text;
   opacity: 0.2;
 }
+@media (max-width: 1200px) {
+  .jumbotron {
+    background: $black url('../images/jumbo-lap.jpg') no-repeat;
+    background-position: center top;
+  }
+}
 
 @media (max-width: 768px) {
   .jumbotron {
+    background-position: center, center;
     &__title {
       font-size: 4.8rem;
     }
@@ -69,6 +76,8 @@
 
 @media (max-width: 480px) {
   .jumbotron {
+    background: $black url('../images/jumbo-mobile.jpg') no-repeat;
+    background-position: center center;
     &__title {
       font-size: 3.6rem;
     }
