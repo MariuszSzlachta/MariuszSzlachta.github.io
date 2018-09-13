@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Marck+Script|Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="vendor/normalize.css">
   <link rel="stylesheet" href="vendor/rik-icons/styles.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Mariusz Szlachta</title>
 </head>
 <body>
-  <nav class="nav">
+  <nav class="nav" style="display: none">
     <div class="container">
       <button class="hamburger toggled">
         <span class="hamburger__bar"></span>
@@ -52,23 +53,11 @@
       </ul>
     </div>
   </nav>
-
   <header class="jumbotron">
-    <div class="container flex-col flex-full">
-      <div class="row row--full-width">
-        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5 col-xs-12 col-xs-offset-0 outer">
-          <h1 class="jumbotron__title">Mariusz Szlachta
-            <span class="jumbotron__subtitle">Junior Web Developer</span>
-          </h1>
-        </div>
-      </div>
-      <!-- <a href="" class="link link--absolute jumbotron__link">
-        <span class="mask">
-          <span class="mask__text">Kontakt<i class="link__icon icon icon-arrow-right"></i></span>
-        </span>
-        <span class="link__text">Kontakt<i class="link__icon icon icon-arrow-right"></i></span>
-      </a> -->
-    </div>
+    <h1 class="jumbotron__title">Mariusz Szlachta
+      <span class="jumbotron__subtitle">Junior Web Developer</span>
+    </h1>
+    <span class="clip">Web<br>Developer</span>
   </header>
   <article id="about-me" class="article about-me">
     <div class="container flex-col">
@@ -89,7 +78,7 @@
     <div class="container flex-col">
       <h2 class="footer__title">Contact me</h2>
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0">
+        <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0 outer">
           <form action="action="https://formspree.io/your@email.com" method="POST"" class="contact-form">
             <div class="row row--full-width contact-form__inner">
                 <div class="col-lg-6 col-sm-12 contact-form__group">

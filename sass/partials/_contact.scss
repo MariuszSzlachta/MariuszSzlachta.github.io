@@ -32,3 +32,19 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .footer {
+    &__title {
+      &::before,
+      &::after {
+        width: 50px;
+      }
+      &::before {
+        left: -65px;
+      }
+      &::after {
+        right: -65px;
+      }
+    }
+  }
+}
