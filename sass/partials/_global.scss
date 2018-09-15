@@ -17,7 +17,7 @@ body {
 
 .section,
 .article {
-  padding: 8rem;
+  padding: 8rem 12px;
   &__title {
     margin: 0;
     padding-bottom: 0;
@@ -37,4 +37,8 @@ body {
   }
 }
 
-
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 12px;
+  }
+}

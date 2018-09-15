@@ -12,7 +12,7 @@
   <title>Mariusz Szlachta</title>
 </head>
 <body>
-  <nav class="nav" style="display: none">
+  <nav class="nav">
     <div class="container">
       <button class="hamburger toggled">
         <span class="hamburger__bar"></span>
@@ -74,12 +74,55 @@
       </div>
     </div>
   </article>
+  <section id="portfolio" class="portfolio section">
+    <div class="container flex-col">
+      <div class="portfolio__carousel carousel">
+        <!-- cell one -->
+        <div class="carousel-cell">
+          <div class="project">
+            <div class="project__headings headings">
+              <p class="headings__category">Landing page</p>
+              <h3 class="headings__title">Avax</h3>
+              <a href="#" data-get-details="1" class="headings__button button" role="button">
+                  <span class="button__text">Project details</span>
+                  <i class=" button__icon icon-arrow-right"></i>
+              </a>
+            </div>
+            <!-- preview początek -->
+            <div class="project__preview preview col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+              <picture class="preview__picture">
+                <source media="(min-width: 1200px)" srcset="images/avax/avax-preview-full.jpg">
+                <source media="(min-width: 768px)" srcset="images/avax/avax-preview-ipad.jpg">
+                  <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
+                    <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
+                <img class="preview__image"src="images/avax/avax-preview-ipad.jpg" alt="avax project miniature">
+              </picture>
+            </div>
+            <!-- preview koniec -->
+            <!-- details początek -->
+            <div data-details="1" class="project__details col-lg-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <!-- treść -->
+                </div>
+                <div class="col-lg-6 col-md-12 image-container">
+                  <!-- foto -->
+                </div>
+              </div>
+            </div>
+            <!-- details koniec -->
+          </div>
+        </div>
+        <!-- end of cell one -->
+      </div>
+    </div>
+  </section>
   <footer id ="contact" class="footer contact">
     <div class="container flex-col">
       <h2 class="footer__title">Contact me</h2>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0 outer">
-          <form action="action="https://formspree.io/your@email.com" method="POST"" class="contact-form">
+          <form action="https://formspree.io/your@email.com" method="POST"" class="contact-form">
             <div class="row row--full-width contact-form__inner">
                 <div class="col-lg-6 col-sm-12 contact-form__group">
                   <input id="input-name "type="text" name="name" class="contact-form__input">

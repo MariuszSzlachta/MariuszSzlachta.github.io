@@ -55,3 +55,19 @@
     }
   }
 }
+
+// button animation
+.button {
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: $primary-color;
+  }
+  &:hover .button__icon {
+    transform: translate3d(5px, 0, 0);
+  }
+  .button__icon {
+    display: inline-block;
+    vertical-align: sub;
+    transition: transform 0.3s ease-in-out;
+  }
+}

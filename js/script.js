@@ -6,3 +6,12 @@ const nav = document.querySelector('nav');
 //   if (pageYOffset)
 // }
 
+// Carousel
+
+const element = document.querySelector('.carousel');
+const flkty = new Flickity(element, {
+    cellAlign: 'left',
+    contain: true,
+    hash: true,
+    pageDots: true
+})

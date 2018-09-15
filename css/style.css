@@ -37,6 +37,13 @@
   height: 100%;
 }
 
+.flex-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 [class*='col-'] {
   padding: 12px;
 }
@@ -662,7 +669,7 @@ body {
 
 .section,
 .article {
-  padding: 8rem;
+  padding: 8rem 12px;
 }
 
 .section__title,
@@ -684,6 +691,12 @@ body {
   line-height: 4;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 12px;
+  }
 }
 
 .link:hover .link__rect {
@@ -742,6 +755,24 @@ body {
     stroke-dasharray: 100, 400;
     stroke-dashoffset: 145;
   }
+}
+
+.button {
+  transition: color 0.3s ease-in-out;
+}
+
+.button:hover {
+  color: #F7AC54;
+}
+
+.button:hover .button__icon {
+  transform: translate3d(5px, 0, 0);
+}
+
+.button .button__icon {
+  display: inline-block;
+  vertical-align: sub;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hamburger {
@@ -1239,6 +1270,150 @@ body {
   }
   .footer__title::after {
     right: -65px;
+  }
+}
+
+.headings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.headings__button {
+  position: absolute;
+  bottom: 190px;
+  right: 30px;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.headings__button::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 130px;
+  height: 2px;
+  background-color: #F7AC54;
+}
+
+.headings__category {
+  position: relative;
+  top: 125px;
+  left: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2.5;
+  text-transform: uppercase;
+  color: #F7AC54;
+}
+
+.headings__category::before {
+  content: '';
+  position: absolute;
+  top: -125px;
+  left: 0;
+  width: 2px;
+  height: 120px;
+  background-color: #F7AC54;
+}
+
+.headings__title {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 5.4rem;
+  font-family: "Marck Script", cursive;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .headings {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .headings__button, .headings__title {
+    position: static;
+  }
+  .headings__category {
+    top: 48px;
+    left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  .headings__category::before {
+    top: -65px;
+    left: calc(50% - 2px);
+    height: 60px;
+  }
+  .headings__title {
+    margin: 2.5rem 0 0;
+    text-align: center;
+  }
+  .headings__button {
+    text-align: center;
+  }
+  .headings__button::after {
+    display: none;
+  }
+}
+
+.preview {
+  overflow: hidden;
+}
+
+.preview__picture {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.preview__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio {
+  overflow: hidden;
+  background: black;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project__details {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .project {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .project__preview {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .project__headings {
+    -ms-flex-order: 2;
+        order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
