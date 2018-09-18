@@ -1,14 +1,15 @@
+
 .details {
-  display: none;
   padding: 0;
   height: 0;
   z-index: -111;
+  opacity: 0;
+  transition: z-index 2s ease-in-out, opacity  2s ease-in-out;
   &--active {
-    display: block;
-    // height: 640px;
+    padding: 12px;
     height: 100%;
     z-index: 111;
-    padding: 12px;
+    opacity: 1;
   }
   [class*='col-'] {
     height: 100%;
@@ -25,6 +26,7 @@
   }
   &__category {
     font-size: 1.4rem;
+    font-weight: bold;
     line-height: 2.5;
     text-transform: uppercase;
     color: $primary-color;
@@ -46,10 +48,10 @@
     min-height: 630px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) and (orientation: landscape) {
   .details {
-    &--active {
-      // height: 760px;
+    &__animation {
+      display: none;
     }
   }
 }
