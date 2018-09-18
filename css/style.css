@@ -775,6 +775,28 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.details__animation {
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  45% {
+    background-position: 0 100%;
+  }
+  55% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 .hamburger {
   display: none;
 }
@@ -1277,7 +1299,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  height: 0;
+  width: 0;
+  z-index: -112;
+}
+
+.headings--active {
   width: 100%;
+  z-index: 111;
   height: 100%;
 }
 
@@ -1368,7 +1397,17 @@ body {
 }
 
 .preview {
+  width: 0;
+  height: 0;
+  z-index: -113;
+  background-color: #000;
   overflow: hidden;
+}
+
+.preview--active {
+  z-index: 111;
+  width: 100%;
+  height: 100%;
 }
 
 .preview__picture {
@@ -1385,6 +1424,64 @@ body {
      object-fit: cover;
 }
 
+.details {
+  display: none;
+  padding: 0;
+  height: 0;
+  z-index: -111;
+  position: relative;
+  background-color: #202020;
+}
+
+.details--active {
+  display: block;
+  height: 100%;
+  z-index: 111;
+  padding: 12px;
+}
+
+.details [class*='col-'] {
+  height: 100%;
+  overflow: hidden;
+  padding: 4rem 12px;
+}
+
+.details::before, .details::after {
+  content: '';
+  position: absolute;
+  background-color: #F7AC54;
+}
+
+.details__category {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  text-transform: uppercase;
+  color: #F7AC54;
+}
+
+.details__title {
+  margin: 0;
+  font-family: "Marck Script", cursive;
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+
+.details__text {
+  font-size: 1.4rem;
+  color: #9C9C9C;
+}
+
+.details__animation {
+  background: transparent url("../images/avax/avax-ent-full.png") no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  min-height: 630px;
+}
+
+.flickity-viewport {
+  min-height: 720px;
+}
+
 .portfolio {
   overflow: hidden;
   background: black;
@@ -1396,11 +1493,10 @@ body {
   height: 100%;
 }
 
-.project__details {
-  display: none;
-}
-
 @media (max-width: 768px) {
+  .details.details--active .flickity-viewport {
+    min-height: 1600px;
+  }
   .project {
     display: -ms-flexbox;
     display: flex;

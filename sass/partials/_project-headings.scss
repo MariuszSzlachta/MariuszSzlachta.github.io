@@ -2,8 +2,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  height: 0;
+  width: 0;
+  z-index: -112;
+  &--active {
+    width: 100%;
+    z-index: 111;
+    height: 100%;
+  }
   &__button {
     position: absolute;
     bottom: 190px;
@@ -55,7 +61,7 @@
 
 @media (max-width: 768px) {
   .headings {
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
     &__button,

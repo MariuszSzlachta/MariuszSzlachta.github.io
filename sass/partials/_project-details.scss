@@ -1,0 +1,55 @@
+.details {
+  display: none;
+  padding: 0;
+  height: 0;
+  z-index: -111;
+  &--active {
+    display: block;
+    // height: 640px;
+    height: 100%;
+    z-index: 111;
+    padding: 12px;
+  }
+  [class*='col-'] {
+    height: 100%;
+    overflow: hidden;
+    padding: 4rem 12px;
+  }
+  position: relative;
+  background-color: $background-1;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $primary-color;
+  }
+  &__category {
+    font-size: 1.4rem;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+  &__title {
+    margin: 0;
+    font-family: $secondary-font;
+    font-size: 4rem;
+    color: $light-text;
+  }
+  &__text {
+    font-size: 1.4rem;
+    color: $pera-text;
+  }
+  &__animation {
+    background: transparent url('../images/avax/avax-ent-full.png') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    min-height: 630px;
+  }
+}
+@media (max-width: 1200px) {
+  .details {
+    &--active {
+      // height: 760px;
+    }
+  }
+}

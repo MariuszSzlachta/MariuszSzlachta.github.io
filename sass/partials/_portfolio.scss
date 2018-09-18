@@ -5,7 +5,9 @@
 .carousel-cell {
 // ustawić stałą wysokość tak by pasowało ale dostosowac ją w zależności od media queries by ładnie wyglądało
 }
-
+.flickity-viewport {
+  min-height: 720px;
+}
 .portfolio {
   overflow: hidden;
   background: black;
@@ -15,14 +17,14 @@
   position: relative;
   width: 100%;
   height: 100%;
-  &__details {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
   .portfolio {
 
+  }
+  .details.details--active .flickity-viewport {
+    min-height: 1600px;
   }
   .project {
     display: flex;
@@ -33,6 +35,5 @@
     &__headings {
       order: 2;
     }
-    
   }
 }

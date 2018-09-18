@@ -71,3 +71,25 @@
     transition: transform 0.3s ease-in-out;
   }
 }
+
+// details__animation 
+.details__animation {
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  45% {
+    background-position: 0 100%;
+  }
+  55% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

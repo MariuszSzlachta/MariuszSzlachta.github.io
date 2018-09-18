@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="vendor/normalize.css">
   <link rel="stylesheet" href="vendor/rik-icons/styles.css">
+  <link rel="stylesheet" href="vendor/flickity.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Mariusz Szlachta</title>
 </head>
@@ -67,9 +68,9 @@
           <img src="" alt="My foto" class="article__image">
         </div>
         <div class="col-lg-8 col-sm-12">
-          <p class="article__content">Mam na imię Mariusz, jestem ambitnym web developerem z&nbsp; kreatywnym podejściem do&nbsp;rozwiązywania problemów i&nbsp;sporą dozą poczucia humoru. Tworzenie aplikacji i&nbsp;stron internetowych daje mi wielką satysfakcję. Uwielbiam poszerzać swoje horyzonty i&nbsp;uczucie towarzyszące zrozumieniu kolejnego skomplikowanego zagadnienia. </p>
-          <p class="article__content">Jestem absolwentem bootcamp'u Web Developer organizowanego przez Kodillę, podczas którego mogłem zbudować solidne fundamenty w&nbsp;zakresie tworzenia aplikacji w&nbsp;oparciu o&nbsp;najpopularniejsze technologie języka Javascript. W swoich projektach chętnie korzystam z&nbsp;rozwiązań jakie daje ReactJS oraz zarządzanie stanem aplikacji za&nbsp;pomocą Redux. SASS w&nbsp;składni SCSS stał się moim przyjacielem, a&nbsp;automatyzacja zadań za&nbsp;pomocą npm i&nbsp;budowanie aplikacji za&nbsp;pomocą webpack'a jest niemalże nieodzownym standardem w mojej pracy. Wspaniałe jest to, że&nbsp;podczas bootcamp'u mogłem zaznajomić się również z&nbsp;technologiami backendowymi m.&nbsp;in. MongoDB z&nbsp;Mongoose, Node.js, Express. Jednakże najcenniejszą rzeczą jakiej się nauczyłem to, <em class="article__content article__content--em">że dla chcącego nic trudnego.</em></p>
-          <p class="article__content">Obecnie poszukuję pracy, w&nbsp;której będę zaangażowany w&nbsp;ambitne i&nbsp;ciekawe projekty. Chcę nieustannie się rozwijać i&nbsp;uczyć od&nbsp;bardziej doświadczonych członków zespołu. Zapraszam Cię do&nbsp;zapoznania się z&nbsp;najciekawszym zrealizowanymi przeze mnie projektami.</p>
+          <p class="article__content">My name is Mariusz.  I'm&nbsp;an&nbsp;ambitious web developer with a&nbsp;creative approach to&nbsp;solving problems and&nbsp;huge dose of&nbsp;sense of&nbsp;humor. Creating applications and websites gives me great satisfaction. I&nbsp;love that feeling when complex parts of&nbsp;code become clear and&nbsp;problems, lately imposible to&nbsp;solve, becames easy to&nbsp;overwcome.</p>
+          <p class="article__content">I'm a graduate of&nbsp;the&nbsp;Web&nbsp;Developer bootcamp organized by&nbsp;Kodilla, during which I&nbsp;built solid foundation in&nbsp;the&nbsp;area of&nbsp;web apps development based on&nbsp;the&nbsp;most popular Javascript technologies. In&nbsp;my&nbsp;projects I'm eager to&nbsp;use solutions offered by&nbsp;ReactJS and state management provided by&nbsp;Redux. SASS in&nbsp;SCSS syntax became my friend, and&nbsp;task automation using npm and&nbsp;building applications using a&nbsp;webpack is&nbsp;almost an&nbsp;indispensable standard in&nbsp;my&nbsp;work. It's g­reat that during the bootcamp I&nbsp;was able to&nbsp;get familiar with backend technologies as&nbsp;MongoDB with&nbsp;Mongoose, Node.js, Express. However, the most valuable thing I've learned is&nbsp;that <em class="article__content article__content--em">nothing is impossible.</em></p>
+          <p class="article__content">I'm currently looking for a&nbsp;job in&nbsp;which I&nbsp;will be&nbsp;involved in&nbsp;ambitious and&nbsp;interesting projects. I&nbsp;want to&nbsp;constantly develop my&nbsp;skills and&nbsp;learn from more experienced team members.  I invite you to&nbsp;familiarize yourself with the&nbsp;most interesting projects I&nbsp;have carried out.</p>
         </div>
       </div>
     </div>
@@ -80,7 +81,7 @@
         <!-- cell one -->
         <div class="carousel-cell">
           <div class="project">
-            <div class="project__headings headings">
+            <div data-headings="1" class="project__headings headings headings--active">
               <p class="headings__category">Landing page</p>
               <h3 class="headings__title">Avax</h3>
               <a href="#" data-get-details="1" class="headings__button button" role="button">
@@ -89,23 +90,28 @@
               </a>
             </div>
             <!-- preview początek -->
-            <div class="project__preview preview col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+            <div data-preview="1" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
               <picture class="preview__picture">
                 <source media="(min-width: 1200px)" srcset="images/avax/avax-preview-full.jpg">
                 <source media="(min-width: 768px)" srcset="images/avax/avax-preview-ipad.jpg">
-                  <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
-                    <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
+                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
+                <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
                 <img class="preview__image"src="images/avax/avax-preview-ipad.jpg" alt="avax project miniature">
               </picture>
             </div>
             <!-- preview koniec -->
             <!-- details początek -->
-            <div data-details="1" class="project__details col-lg-12">
+            <div data-details="1" class="project__details details col-lg-12">
               <div class="row">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-6 col-md-12 details__text">
                   <!-- treść -->
+                  <h3 class="details__title">Avax</h3>
+                  <p class="details__category">Landing page | August 2018</p>
+                  <p class="details__text">This cool landing page I created from *.psd file. This was very instructive project for me.</p>
+                  <p class="details__text">Many sections of this project pushed me to find best solition. Instead of using regular css I have decided to use scss, and its advantages like splitting components and section to multiple files, variables, and nestings. Avax uses custom theme google maps setted using its api. This approach allows to enjoy maximum performance and look control. Lighweight free carousel Flickity is one of my favorite. Despite its small weight provides many useful features and can be controlled using vanilla js what was my goal, because I didn't want to use JQuery. I need to mention about my script for filtering projects. I'm very proud of it because I could combine 'data-set' and javascript to make it works.</p>
+                  <p class="details__text">It's not possible to write everything just in several sentence. So then I encourage you to get familiar with source code and see how it works online, by clicking buttons down bellow.</p>
                 </div>
-                <div class="col-lg-6 col-md-12 image-container">
+                <div class="col-lg-6 col-md-12 details__animation">
                   <!-- foto -->
                 </div>
               </div>
@@ -151,5 +157,8 @@
       </h2>
     </div>
   </footer>
+  <script src="vendor/flickity.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
