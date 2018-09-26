@@ -40,7 +40,7 @@
     font-size: 1.6rem;
     line-height: 2;
     text-indent: 3.5rem;
-    color: $light-text;
+    color: $pera-text;
     &:first-child {
       &:first-letter {
         font-size: 3rem;
@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 480px) {
+  .article {
+    padding: 4rem 12px;
+  }
   .article__title::before,
   .article__title::after {
     width: 50px;

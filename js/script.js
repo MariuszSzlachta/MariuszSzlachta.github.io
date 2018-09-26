@@ -1,11 +1,15 @@
 // navbar show/hide
 
-const nav = document.querySelector('nav');
+const nav = document.querySelector('.nav');
 
-// function toggleNavVisibility() {
-//   if (pageYOffset)
-// }
-
+function toggleNavStyles(){
+  if (pageYOffset >= 130 && pageYOffset <= 730){
+    nav.classList.add('nav--dark');
+  } else {
+    nav.classList.remove('nav--dark');
+  }
+}
+document.addEventListener('scroll', toggleNavStyles); 
 // Carousel
 
 const element = document.querySelector('.carousel');

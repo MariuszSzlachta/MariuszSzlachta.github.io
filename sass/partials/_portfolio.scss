@@ -7,9 +7,22 @@
 }
 .flickity-viewport {
   min-height: 520px;
+  margin-bottom: 2rem;
 }
 .expanded {
   min-height: 830px;
+}
+.flickity-page-dots {
+  margin: 2rem 0;
+  .dot {
+    margin: 0 20px;
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+  }
+  .dot.is-selected {
+    background-color: $primary-color;
+  }
 }
 .portfolio {
   overflow: hidden;
@@ -24,6 +37,10 @@
 
 @media (max-width: 768px) {
   .flickity-viewport {
+    margin-bottom: 2rem;
+  }
+  .flickity-page-dots {
+    margin: 2rem 0;
   }
   .expanded {
     min-height: 1040px;

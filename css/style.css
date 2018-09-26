@@ -695,7 +695,7 @@ body {
 
 @media (max-width: 768px) {
   .section {
-    padding: 2rem 12px;
+    padding: 4rem 12px;
   }
 }
 
@@ -1010,6 +1010,10 @@ body {
   z-index: 10;
 }
 
+.nav--dark {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .nav .container {
   -ms-flex-align: center;
       align-items: center;
@@ -1242,7 +1246,7 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   text-indent: 3.5rem;
-  color: #FFFFFF;
+  color: #9C9C9C;
 }
 
 .article__content:first-child:first-letter {
@@ -1256,6 +1260,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .article {
+    padding: 4rem 12px;
+  }
   .article__title::before,
   .article__title::after {
     width: 50px;
@@ -1309,6 +1316,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .footer {
+    padding: 4rem 0;
+  }
   .footer__title::before, .footer__title::after {
     width: 50px;
   }
@@ -1581,10 +1591,26 @@ body {
 
 .flickity-viewport {
   min-height: 520px;
+  margin-bottom: 2rem;
 }
 
 .expanded {
   min-height: 830px;
+}
+
+.flickity-page-dots {
+  margin: 2rem 0;
+}
+
+.flickity-page-dots .dot {
+  margin: 0 20px;
+  width: 30px;
+  height: 3px;
+  border-radius: 0;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-color: #F7AC54;
 }
 
 .portfolio {
@@ -1599,6 +1625,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .flickity-viewport {
+    margin-bottom: 2rem;
+  }
+  .flickity-page-dots {
+    margin: 2rem 0;
+  }
   .expanded {
     min-height: 1040px;
   }
