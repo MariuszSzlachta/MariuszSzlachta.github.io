@@ -3,7 +3,7 @@
 }
 
 .article {
-  padding: 10rem 0;
+  padding: 10rem 12px;
   &__title {
     position: relative;
     display: flex;
@@ -48,7 +48,7 @@
         color: $primary-color;
       }
     }
-    &--em {
+    &--i {
       color: $primary-color;
     }
   }

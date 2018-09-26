@@ -68,6 +68,9 @@
       width: calc(100% - 40px);
     }
   }
+  &__textarea {
+    min-height: 120px;
+  }
   &__inner {
     justify-content: center;
   }

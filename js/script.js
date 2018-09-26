@@ -24,6 +24,7 @@ const flkty = new Flickity(element, {
 // Project-1
 
 const showDetailsButton1 = document.querySelector('[data-get-details="1"]');
+const showPreviewButton1 = document.querySelector('[data-get-preview="1"]');
 const details1 = document.querySelector('[data-details="1"]');
 const preview1 = document.querySelector('[data-preview="1"]');
 const headings1 = document.querySelector('[data-headings="1"]');
@@ -36,3 +37,11 @@ showDetailsButton1.addEventListener('click', function(e){
     details1.classList.add('details--active');
     flktyVP.classList.add('expanded');
 });
+
+showPreviewButton1.addEventListener('click', function(e){
+    e.preventDefault();
+    headings1.classList.add('headings--active');
+    preview1.classList.add('preview--active');
+    details1.classList.remove('details--active');
+    flktyVP.classList.remove('expanded');
+})

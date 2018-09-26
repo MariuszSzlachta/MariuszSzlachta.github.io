@@ -6,10 +6,10 @@
 // ustawić stałą wysokość tak by pasowało ale dostosowac ją w zależności od media queries by ładnie wyglądało
 }
 .flickity-viewport {
-  // min-height: 720px;
+  min-height: 520px;
 }
 .expanded {
-  min-height: 720px;
+  min-height: 830px;
 }
 .portfolio {
   overflow: hidden;
@@ -26,7 +26,7 @@
   .flickity-viewport {
   }
   .expanded {
-    min-height: 940px;
+    min-height: 1040px;
   }
   .project {
     display: flex;

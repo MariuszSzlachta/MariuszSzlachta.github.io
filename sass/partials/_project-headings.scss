@@ -1,14 +1,19 @@
 .headings {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   height: 0;
   width: 0;
   z-index: -112;
+  opacity: 0;
+  transition: opacity  0.2s ease-in-out;
   &--active {
+    display: block;
     width: 100%;
     z-index: 111;
     height: 100%;
+    opacity: 1;
   }
   &__button {
     position: absolute;

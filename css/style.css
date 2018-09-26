@@ -769,10 +769,28 @@ body {
   transform: translate3d(5px, 0, 0);
 }
 
+.button:hover .button__icon--reverse {
+  transform: translate3d(-5px, 0, 0);
+}
+
 .button .button__icon {
   display: inline-block;
   vertical-align: sub;
   transition: transform 0.3s ease-in-out;
+}
+
+[data-details-animation="1"] {
+  background: transparent url("../images/avax/avax-ent-full.png") no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+@media (max-width: 1200px) {
+  [data-details-animation="1"] {
+    background: transparent url("../images/avax/avax-ent-ipad.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
 }
 
 .details__animation {
@@ -784,6 +802,9 @@ body {
 
 @keyframes scroll {
   0% {
+    background-position: 0 0;
+  }
+  10% {
     background-position: 0 0;
   }
   45% {
@@ -929,6 +950,10 @@ body {
 
 .contact-form__input:focus + .contact-form__label::after, .contact-form__textarea:focus + .contact-form__label::after {
   width: calc(100% - 40px);
+}
+
+.contact-form__textarea {
+  min-height: 120px;
 }
 
 .contact-form__inner {
@@ -1173,7 +1198,7 @@ body {
 }
 
 .article {
-  padding: 10rem 0;
+  padding: 10rem 12px;
 }
 
 .article__title {
@@ -1226,7 +1251,7 @@ body {
   color: #F7AC54;
 }
 
-.article__content--em {
+.article__content--i {
   color: #F7AC54;
 }
 
@@ -1296,18 +1321,23 @@ body {
 }
 
 .headings {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   height: 0;
   width: 0;
   z-index: -112;
+  opacity: 0;
+  transition: opacity  0.2s ease-in-out;
 }
 
 .headings--active {
+  display: block;
   width: 100%;
   z-index: 111;
   height: 100%;
+  opacity: 1;
 }
 
 .headings__button {
@@ -1426,19 +1456,31 @@ body {
 
 .details {
   padding: 0;
+  width: 0;
   height: 0;
   z-index: -111;
   opacity: 0;
-  transition: z-index 2s ease-in-out, opacity  2s ease-in-out;
+  transition: opacity 1.7s ease-in-out;
   position: relative;
   background-color: #202020;
 }
 
+.details > * {
+  width: 0;
+  height: 0;
+}
+
 .details--active {
   padding: 12px;
+  width: 100%;
   height: 100%;
   z-index: 111;
   opacity: 1;
+}
+
+.details--active > * {
+  width: auto;
+  height: auto;
 }
 
 .details [class*='col-'] {
@@ -1469,25 +1511,80 @@ body {
 }
 
 .details__text {
+  padding-right: 4rem;
   font-size: 1.4rem;
   color: #9C9C9C;
 }
 
 .details__animation {
-  background: transparent url("../images/avax/avax-ent-full.png") no-repeat;
   background-size: cover;
   background-position: 0 0;
-  min-height: 630px;
+  min-height: 654px;
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+.details__footer {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.details__link {
+  margin-right: 1rem;
+  border-bottom: 1px solid #feb960;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out;
+}
+
+.details__link:hover {
+  color: #F7AC54;
+  border-bottom-color: #FFFFFF;
+}
+
+.details__button {
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.details__button::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 130px;
+  height: 2px;
+  background-color: #F7AC54;
+}
+
+@media (max-width: 992px) {
+  .details--active {
+    padding: 0;
+  }
+  .details__text {
+    padding-right: 0;
+  }
   .details__animation {
     display: none;
   }
+  .details__button {
+    margin-bottom: 6rem;
+  }
+}
+
+.flickity-viewport {
+  min-height: 520px;
 }
 
 .expanded {
-  min-height: 720px;
+  min-height: 830px;
 }
 
 .portfolio {
@@ -1503,7 +1600,7 @@ body {
 
 @media (max-width: 768px) {
   .expanded {
-    min-height: 940px;
+    min-height: 1040px;
   }
   .project {
     display: -ms-flexbox;

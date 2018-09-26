@@ -1,15 +1,25 @@
 
 .details {
   padding: 0;
+  width: 0;
   height: 0;
   z-index: -111;
   opacity: 0;
-  transition: z-index 2s ease-in-out, opacity  2s ease-in-out;
+  transition: opacity 1.7s ease-in-out;
+  > * {
+    width: 0;
+    height: 0;
+  }
   &--active {
     padding: 12px;
+    width: 100%;
     height: 100%;
     z-index: 111;
     opacity: 1;
+    > * {
+      width: auto;
+      height: auto;
+    }
   }
   [class*='col-'] {
     height: 100%;
@@ -38,20 +48,66 @@
     color: $light-text;
   }
   &__text {
+    padding-right: 4rem;
     font-size: 1.4rem;
     color: $pera-text;
   }
   &__animation {
-    background: transparent url('../images/avax/avax-ent-full.png') no-repeat;
     background-size: cover;
     background-position: 0 0;
-    min-height: 630px;
+    min-height: 654px;
+  }
+  &__footer {
+    display: flex;
+    padding: 1rem 0;
+  }
+  &__link {
+    margin-right: 1rem;
+    border-bottom: 1px solid $hover-color;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $light-text;
+    transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out;
+    &:hover {
+      color: $primary-color;
+      border-bottom-color: $light-text;
+    }
+  }
+  &__button {
+    position: relative;
+    display: inline-block;
+    margin: 1rem auto 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $light-text;
+    text-decoration: none;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 130px;
+      height: 2px;
+      background-color: $primary-color;
+    }
   }
 }
-@media (max-width: 768px) and (orientation: landscape) {
+
+@media (max-width: 992px) {
   .details {
+    &--active {
+      padding: 0;
+    }
+    &__text {
+      padding-right: 0;
+    }
     &__animation {
       display: none;
+    }
+    &__button {
+      margin-bottom: 6rem;
     }
   }
 }

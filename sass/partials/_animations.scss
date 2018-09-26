@@ -65,6 +65,9 @@
   &:hover .button__icon {
     transform: translate3d(5px, 0, 0);
   }
+  &:hover .button__icon--reverse {
+    transform: translate3d(-5px, 0, 0);
+  }
   .button__icon {
     display: inline-block;
     vertical-align: sub;
@@ -72,7 +75,20 @@
   }
 }
 
-// details__animation 
+[data-details-animation="1"] {
+  background: transparent url('../images/avax/avax-ent-full.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+@media (max-width: 1200px) {
+  [data-details-animation="1"] {
+    background: transparent url('../images/avax/avax-ent-ipad.png') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
+}
+
+// details__animation
 .details__animation {
   animation-name: scroll;
   animation-duration: 40s;
@@ -81,6 +97,9 @@
 }
 @keyframes scroll {
   0% {
+    background-position: 0 0;
+  }
+  10% {
     background-position: 0 0;
   }
   45% {

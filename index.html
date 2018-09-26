@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
         <li class="navbar__item">
           <a href="" class="navbar__link link">
             <svg class="link__svg">
-              <rect class="link__rect"></rect>
+              <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
             <span class="link__text">About me</span>
           </a>
@@ -30,7 +30,7 @@
         <li class="navbar__item">
           <a href="" class="navbar__link link">
             <svg class="link__svg">
-              <rect class="link__rect"></rect>
+              <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
             <span class="link__text">Projects</span>
           </a>
@@ -38,7 +38,7 @@
         <li class="navbar__item">
           <a href="" class="navbar__link link">
             <svg class="link__svg">
-              <rect class="link__rect"></rect>
+              <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
             <span class="link__text">Curriculum Vitae</span>
           </a>
@@ -46,7 +46,7 @@
         <li class="navbar__item">
           <a href="" class="navbar__link link">
             <svg class="link__svg">
-              <rect class="link__rect"></rect>
+              <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
             <span class="link__text">Contact</span>
           </a>
@@ -69,7 +69,7 @@
         </div>
         <div class="col-lg-8 col-sm-12">
           <p class="article__content">My name is Mariusz.  I'm&nbsp;an&nbsp;ambitious web developer with a&nbsp;creative approach to&nbsp;solving problems and&nbsp;huge dose of&nbsp;sense of&nbsp;humor. Creating applications and websites gives me great satisfaction. I&nbsp;love that feeling when complex parts of&nbsp;code become clear and&nbsp;problems, lately imposible to&nbsp;solve, becames easy to&nbsp;overwcome.</p>
-          <p class="article__content">I'm a graduate of&nbsp;the&nbsp;Web&nbsp;Developer bootcamp organized by&nbsp;Kodilla, during which I&nbsp;built solid foundation in&nbsp;the&nbsp;area of&nbsp;web apps development based on&nbsp;the&nbsp;most popular Javascript technologies. In&nbsp;my&nbsp;projects I'm eager to&nbsp;use solutions offered by&nbsp;ReactJS and state management provided by&nbsp;Redux. SASS in&nbsp;SCSS syntax became my friend, and&nbsp;task automation using npm and&nbsp;building applications using a&nbsp;webpack is&nbsp;almost an&nbsp;indispensable standard in&nbsp;my&nbsp;work. It's g­reat that during the bootcamp I&nbsp;was able to&nbsp;get familiar with backend technologies as&nbsp;MongoDB with&nbsp;Mongoose, Node.js, Express. However, the most valuable thing I've learned is&nbsp;that <em class="article__content article__content--em">nothing is impossible.</em></p>
+          <p class="article__content">I'm a graduate of&nbsp;the&nbsp;Web&nbsp;Developer bootcamp organized by&nbsp;Kodilla, during which I&nbsp;built solid foundation in&nbsp;the&nbsp;area of&nbsp;web apps development based on&nbsp;the&nbsp;most popular Javascript technologies. In&nbsp;my&nbsp;projects I'm eager to&nbsp;use solutions offered by&nbsp;ReactJS and state management provided by&nbsp;Redux. SASS in&nbsp;SCSS syntax became my friend, and&nbsp;task automation using npm and&nbsp;building applications using a&nbsp;webpack is&nbsp;almost an&nbsp;indispensable standard in&nbsp;my&nbsp;work. It's g­reat that during the bootcamp I&nbsp;was able to&nbsp;get familiar with backend technologies as&nbsp;MongoDB with&nbsp;Mongoose, Node.js, Express. However, the most valuable thing I've learned is&nbsp;that <i class="article__content article__content--i">nothing is impossible.</i></p>
           <p class="article__content">I'm currently looking for a&nbsp;job in&nbsp;which I&nbsp;will be&nbsp;involved in&nbsp;ambitious and&nbsp;interesting projects. I&nbsp;want to&nbsp;constantly develop my&nbsp;skills and&nbsp;learn from more experienced team members.  I invite you to&nbsp;familiarize yourself with the&nbsp;most interesting projects I&nbsp;have carried out.</p>
         </div>
       </div>
@@ -96,7 +96,7 @@
                 <source media="(min-width: 768px)" srcset="images/avax/avax-preview-ipad.jpg">
                 <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
                 <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
-                <img class="preview__image"src="images/avax/avax-preview-ipad.jpg" alt="avax project miniature">
+                <img class="preview__image" src="images/avax/avax-preview-ipad.jpg" alt="avax project miniature">
               </picture>
             </div>
             <!-- preview koniec -->
@@ -110,10 +110,19 @@
                   <p class="details__text">This cool landing page I created from *.psd file. This was very instructive project for me.</p>
                   <p class="details__text">Many sections of this project pushed me to find best solition. Instead of using regular css I have decided to use scss, and its advantages like splitting components and section to multiple files, variables, and nestings. Avax uses custom theme google maps setted using its api. This approach allows to enjoy maximum performance and look control. Lighweight free carousel Flickity is one of my favorite. Despite its small weight provides many useful features and can be controlled using vanilla js what was my goal, because I didn't want to use JQuery. I need to mention about my script for filtering projects. I'm very proud of it because I could combine 'data-set' and javascript to make it works.</p>
                   <p class="details__text">It's not possible to write everything just in several sentence. So then I encourage you to get familiar with source code and see how it works online, by clicking buttons down bellow.</p>
+                  <footer class="details__footer">
+                    <a href="https://github.com/MariuszSzlachta/AVAX" target="_blank" class="details__link">view code</a>
+                    <a href="https://mariuszszlachta.github.io/AVAX/" target="_blank" class="details__link">go live</a>
+                  </footer>
                 </div>
-                <div class="col-lg-6 col-md-12 details__animation">
+                <div data-details-animation="1" class="col-lg-6 col-md-12 details__animation">
                   <!-- foto -->
                 </div>
+                <!-- <hr class="details__separator"> -->
+                <a href="#" data-get-preview="1" class="details__button button" role="button">
+                  <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
+                  <span class="button__text">Project details</span>
+                </a>
               </div>
             </div>
             <!-- details koniec -->
@@ -128,10 +137,10 @@
       <h2 class="footer__title">Contact me</h2>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0 outer">
-          <form action="https://formspree.io/your@email.com" method="POST"" class="contact-form">
+          <form action="https://formspree.io/your@email.com" method="POST" class="contact-form">
             <div class="row row--full-width contact-form__inner">
                 <div class="col-lg-6 col-sm-12 contact-form__group">
-                  <input id="input-name "type="text" name="name" class="contact-form__input">
+                  <input id="input-name" type="text" name="name" class="contact-form__input">
                   <label for="input-name" class="contact-form__label label"><span class="label__text">Your name</span></label>
                 </div>
                 <div class="col-lg-6 col-sm-12 contact-form__group">
@@ -154,7 +163,6 @@
           </form>
         </div>
       </div>
-      </h2>
     </div>
   </footer>
   <script src="vendor/flickity.pkgd.min.js"></script>
