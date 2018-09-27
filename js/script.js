@@ -1,18 +1,37 @@
-// navbar show/hide
-
+// All variables
 const nav = document.querySelector('.nav');
+const hamburger = document.querySelector('.hamburger')
+const navbar = document.querySelector('.navbar');
+const element = document.querySelector('.carousel');
+let inputs = document.querySelectorAll('.contact-form__input');
+let textarea = document.querySelector('.contact-form__textarea');
+const submitButton = document.querySelector('.submit');
 
+// navbar show/hide
 function toggleNavStyles(){
   if (pageYOffset >= 130 && pageYOffset <= 730){
     nav.classList.add('nav--dark');
   } else {
     nav.classList.remove('nav--dark');
-  }
-}
-document.addEventListener('scroll', toggleNavStyles); 
+  };
+};
+document.addEventListener('scroll', toggleNavStyles);
+// HAMBURGER
+
+
+hamburger.addEventListener('click', function(){
+  if (hamburger.classList.contains('hamburger--toggled')) {
+    nav.classList.remove('nav--toggled');
+    navbar.classList.remove('navbar--toggled');
+    hamburger.classList.remove('hamburger--toggled');
+  } else {
+    nav.classList.add('nav--toggled');
+    navbar.classList.add('navbar--toggled');
+    hamburger.classList.add('hamburger--toggled');
+  };
+});
 // Carousel
 
-const element = document.querySelector('.carousel');
 const flkty = new Flickity(element, {
     cellAlign: 'left',
     contain: true,
@@ -23,29 +42,49 @@ const flkty = new Flickity(element, {
     prevNextButtons: false
 });
 
-// Projects controll
-
-// Project-1
-
-const showDetailsButton1 = document.querySelector('[data-get-details="1"]');
-const showPreviewButton1 = document.querySelector('[data-get-preview="1"]');
-const details1 = document.querySelector('[data-details="1"]');
-const preview1 = document.querySelector('[data-preview="1"]');
-const headings1 = document.querySelector('[data-headings="1"]');
-const flktyVP = document.querySelector('.flickity-viewport');
-
-showDetailsButton1.addEventListener('click', function(e){
-    e.preventDefault();
-    headings1.classList.remove('headings--active');
-    preview1.classList.remove('preview--active');
-    details1.classList.add('details--active');
-    flktyVP.classList.add('expanded');
+// contact-form value checker for toggle styles
+inputs = [...inputs];
+inputs.forEach(el => el.addEventListener('mouseover', checkContent));
+document.addEventListener("DOMContentLoaded", function(event) { 
+  clearForm();
 });
 
-showPreviewButton1.addEventListener('click', function(e){
+function checkContent(){
+  textarea.value.length !== 0 ? textarea.classList.add('contact-form__textarea--not-empty') : textarea.classList.remove('contact-form__textarea--not-empty');
+  inputs.forEach(el => {
+    el.value.length !== 0 ? el.classList.add('contact-form__input--not-empty') : el.classList.remove('contact-form__input--not-empty');
+  });
+}
+function clearForm() {
+  textarea.value = '',
+  inputs.forEach(el => el.value = '');
+}
+
+// Projects controll
+const flktyVP = document.querySelector('.flickity-viewport');
+const showDetailsBtns = document.querySelectorAll('[data-get="details"]');
+const showPreviewBtns = document.querySelectorAll('[data-get="preview"]');
+const previews = document.querySelectorAll('[data-content="preview"]');
+const headings = document.querySelectorAll('[data-content="headings"]');
+const details = document.querySelectorAll('[data-content="details"]');
+
+// Listeners for show details
+for (let i = 0; i < showDetailsBtns.length; i++) {
+  showDetailsBtns[i].addEventListener('click', function(e){
     e.preventDefault();
-    headings1.classList.add('headings--active');
-    preview1.classList.add('preview--active');
-    details1.classList.remove('details--active');
+    headings[i].classList.remove('headings--active');
+    previews[i].classList.remove('preview--active');
+    details[i].classList.add('details--active');
+    flktyVP.classList.add('expanded');
+  });
+}
+// Listeners for show preview
+for (let i = 0; i < showPreviewBtns.length; i++) {
+  showPreviewBtns[i].addEventListener('click', function(e){
+    e.preventDefault();
+    headings[i].classList.add('headings--active');
+    previews[i].classList.add('preview--active');
+    details[i].classList.remove('details--active');
     flktyVP.classList.remove('expanded');
-})
+  });
+}

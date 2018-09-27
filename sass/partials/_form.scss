@@ -111,3 +111,12 @@
     top: -36px;
   }
 }
+.contact-form__input--not-empty + .label .label__text,
+.contact-form__textarea--not-empty + .label .label__text {
+  transform: scale(0.8) translate3d(-0.5rem, -2rem, 0);
+  color: $primary-color;
+}
+.contact-form__input--not-empty + .contact-form__label::after,
+.contact-form__textarea--not-empty + .contact-form__label::after {
+  width: calc(100% - 40px);
+}

@@ -68,7 +68,7 @@
           <img src="" alt="My foto" class="article__image">
         </div>
         <div class="col-lg-8 col-sm-12">
-          <p class="article__content">My name is Mariusz.  I'm&nbsp;an&nbsp;ambitious web developer with a&nbsp;creative approach to&nbsp;solving problems and&nbsp;huge dose of&nbsp;sense of&nbsp;humor. Creating applications and websites gives me great satisfaction. I&nbsp;love that feeling when complex parts of&nbsp;code become clear and&nbsp;problems, lately imposible to&nbsp;solve, becames easy to&nbsp;overwcome.</p>
+          <p class="article__content">My name is Mariusz.  I'm&nbsp;an&nbsp;ambitious web developer with a&nbsp;creative approach to&nbsp;solving problems and&nbsp;huge dose of&nbsp;sense of&nbsp;humor. Creating applications and websites gives me great satisfaction. I&nbsp;love that feeling when complex parts of&nbsp;code become clear and&nbsp;problems, lately imposible to&nbsp;solve, becomes easy to&nbsp;overwcome.</p>
           <p class="article__content">I'm a graduate of&nbsp;the&nbsp;Web&nbsp;Developer bootcamp organized by&nbsp;Kodilla, during which I&nbsp;built solid foundation in&nbsp;the&nbsp;area of&nbsp;web apps development based on&nbsp;the&nbsp;most popular Javascript technologies. In&nbsp;my&nbsp;projects I'm eager to&nbsp;use solutions offered by&nbsp;ReactJS and state management provided by&nbsp;Redux. SASS in&nbsp;SCSS syntax became my friend, and&nbsp;task automation using npm and&nbsp;building applications using a&nbsp;webpack is&nbsp;almost an&nbsp;indispensable standard in&nbsp;my&nbsp;work. It's g­reat that during the bootcamp I&nbsp;was able to&nbsp;get familiar with backend technologies as&nbsp;MongoDB with&nbsp;Mongoose, Node.js, Express. However, the most valuable thing I've learned is&nbsp;that <i class="article__content article__content--i">nothing is impossible.</i></p>
           <p class="article__content">I'm currently looking for a&nbsp;job in&nbsp;which I&nbsp;will be&nbsp;involved in&nbsp;ambitious and&nbsp;interesting projects. I&nbsp;want to&nbsp;constantly develop my&nbsp;skills and&nbsp;learn from more experienced team members.  I invite you to&nbsp;familiarize yourself with the&nbsp;most interesting projects I&nbsp;have carried out.</p>
         </div>
@@ -78,21 +78,21 @@
   <section id="portfolio" class="portfolio section">
     <div class="container flex-col">
       <div class="portfolio__carousel carousel">
-        <!-- cell one -->
+        <!-- cell one  AVAX-->
         <div class="carousel-cell">
           <div class="project">
-            <div data-headings="1" class="project__headings headings headings--active">
+            <div data-content="headings" class="project__headings headings headings--active">
               <p class="headings__category">Landing page</p>
               <h3 class="headings__title">Avax</h3>
-              <a href="#" data-get-details="1" class="headings__button button" role="button">
+              <a href="#" data-get="details" class="headings__button button" role="button">
                   <span class="button__text">Project details</span>
                   <i class=" button__icon icon-arrow-right"></i>
               </a>
             </div>
             <!-- preview początek -->
-            <div data-preview="1" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
               <picture class="preview__picture">
-                <source media="(min-width: 1200px)" srcset="images/avax/avax-preview-full.jpg">
+                <!-- <source media="(min-width: 1200px)" srcset="images/avax/avax-preview-ipad.jpg"> -->
                 <source media="(min-width: 768px)" srcset="images/avax/avax-preview-ipad.jpg">
                 <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
                 <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
@@ -101,7 +101,7 @@
             </div>
             <!-- preview koniec -->
             <!-- details początek -->
-            <div data-details="1" class="project__details details col-lg-12">
+            <div data-content="details" class="project__details details col-lg-12">
               <div class="row">
                 <div class="col-lg-6 col-md-12 details__text">
                   <!-- treść -->
@@ -119,16 +119,66 @@
                   <!-- foto -->
                 </div>
                 <!-- <hr class="details__separator"> -->
-                <a href="#" data-get-preview="1" class="details__button button" role="button">
+                <a href="#" data-get="preview" class="details__button button" role="button">
                   <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
-                  <span class="button__text">Project details</span>
+                  <span class="button__text">Project preview</span>
                 </a>
               </div>
             </div>
             <!-- details koniec -->
           </div>
         </div>
-        <!-- end of cell one -->
+        <!-- cell 2 SUDOKU -->
+        <div class="carousel-cell">
+          <div class="project">
+            <div data-content="headings" class="project__headings headings headings--active">
+              <p class="headings__category">Game</p>
+              <h3 class="headings__title">Sudoku</h3>
+              <a href="#" data-get="details" class="headings__button button" role="button">
+                  <span class="button__text">Project details</span>
+                  <i class=" button__icon icon-arrow-right"></i>
+              </a>
+            </div>
+            <!-- preview początek -->
+            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+              <picture class="preview__picture">
+                <!-- <source media="(min-width: 1200px)" srcset="images/sudoku/sudoku-full.png"> -->
+                <source media="(min-width: 768px)" srcset="images/sudoku/sudoku-ipad.png">
+                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/sudoku/sudoku-smart-l.png">
+                <source media="(min-width: 320px)" srcset="images/sudoku/sudoku-smart-p.png">
+                <img class="preview__image" src="images/sudoku/sudoku-ipad.png" alt="sudoku project miniature">
+              </picture>
+            </div>
+            <!-- preview koniec -->
+            <!-- details początek -->
+            <div data-content="details" class="project__details details col-lg-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 details__text">
+                  <!-- treść -->
+                  <h3 class="details__title">Sudoku</h3>
+                  <p class="details__category">Sudoku | August 2018</p>
+                  <p class="details__text">This cool landing page I created from *.psd file. This was very instructive project for me.</p>
+                  <p class="details__text">Many sections of this project pushed me to find best solition. Instead of using regular css I have decided to use scss, and its advantages like splitting components and section to multiple files, variables, and nestings. Avax uses custom theme google maps setted using its api. This approach allows to enjoy maximum performance and look control. Lighweight free carousel Flickity is one of my favorite. Despite its small weight provides many useful features and can be controlled using vanilla js what was my goal, because I didn't want to use JQuery. I need to mention about my script for filtering projects. I'm very proud of it because I could combine 'data-set' and javascript to make it works.</p>
+                  <p class="details__text">It's not possible to write everything just in several sentence. So then I encourage you to get familiar with source code and see how it works online, by clicking buttons down bellow.</p>
+                  <footer class="details__footer">
+                    <a href="https://github.com/MariuszSzlachta/AVAX" target="_blank" class="details__link">view code</a>
+                    <a href="https://mariuszszlachta.github.io/AVAX/" target="_blank" class="details__link">go live</a>
+                  </footer>
+                </div>
+                <div data-details-animation="1" class="col-lg-6 col-md-12 details__animation">
+                  <!-- foto -->
+                </div>
+                <!-- <hr class="details__separator"> -->
+                <a href="#" data-get="preview" class="details__button button" role="button">
+                  <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
+                  <span class="button__text">Project preview</span>
+                </a>
+              </div>
+            </div>
+            <!-- details koniec -->
+          </div>
+        </div>
+        <!-- end of cell two -->
       </div>
     </div>
   </section>
@@ -136,23 +186,23 @@
     <div class="container flex-col">
       <h2 class="footer__title">Contact me</h2>
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0 outer">
-          <form action="https://formspree.io/your@email.com" method="POST" class="contact-form">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 outer">
+          <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form">
             <div class="row row--full-width contact-form__inner">
                 <div class="col-lg-6 col-sm-12 contact-form__group">
-                  <input id="input-name" type="text" name="name" class="contact-form__input">
+                  <input id="input-name" type="text" name="name" class="contact-form__input" required>
                   <label for="input-name" class="contact-form__label label"><span class="label__text">Your name</span></label>
                 </div>
                 <div class="col-lg-6 col-sm-12 contact-form__group">
-                  <input id="input-email" type="email" name="_replyto" class="contact-form__input">
+                  <input id="input-email" type="email" name="_replyto" class="contact-form__input" required>
                   <label for="input-email" class="contact-form__label label"><span class="label__text">Your email</span></label>
                 </div>
                 <div class="col-lg-12 contact-form__group">
-                  <input id="input-subject" type="text" class="contact-form__input">
+                  <input id="input-subject" type="text" class="contact-form__input" required>
                   <label for="input-subject" class="contact-form__label label"><span class="label__text">Subject</span></label>
                 </div>
                 <div class="col-lg-12 contact-form__group">
-                  <textarea name="message" id="input-message" cols="30" rows="2" class="contact-form__textarea"></textarea>
+                  <textarea name="message" id="input-message" cols="30" rows="2" class="contact-form__textarea" required></textarea>
                   <label for="input-message" class="contact-form__label label contact-form__label--textarea"><span class="label__text label__text--textarea">Your message</span></label>
                 </div>
                 <button class="contact-form__submit submit">

@@ -5,7 +5,8 @@
 @media (max-width: 992px) {
   .hamburger {
     position: absolute;
-    top: 12px;
+    position: fixed;
+    top: 20px;
     right: 12px;
     display: flex;
     justify-content: center;
@@ -49,8 +50,6 @@
     }
     &.toggled {
 
-    }
-    &.toggled .nav {
     }
   }
 }

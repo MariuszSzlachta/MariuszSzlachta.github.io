@@ -40,12 +40,21 @@
   .jumbotron {
     background: $black url('../images/jumbo-lap.jpg') no-repeat;
     background-position: center top;
+    background-size: cover;
+  }
+}
+@media (max-width: 1200px) and (orientation: portrait){
+  .jumbotron {
+    background: $black url('../images/jumbo-lap.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
 @media (max-width: 768px) {
   .jumbotron {
     background-position: center, center;
+    background-size: cover;
     &__title {
       font-size: 4.8rem;
     }
@@ -78,6 +87,7 @@
   .jumbotron {
     background: $black url('../images/jumbo-mobile.jpg') no-repeat;
     background-position: center center;
+    background-size: cover;
     &__title {
       font-size: 3.6rem;
     }
