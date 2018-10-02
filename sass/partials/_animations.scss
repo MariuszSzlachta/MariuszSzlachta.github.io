@@ -90,6 +90,11 @@
   background-size: cover;
   background-position: 0 0;
 }
+[data-details-animation="4"] {
+  background: transparent url('../images/country/country-app-smart-p.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
 @media (max-width: 1200px) {
   [data-details-animation="1"] {
     background: transparent url('../images/avax/avax-ent-ipad.png') no-repeat;

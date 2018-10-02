@@ -205,6 +205,8 @@ body { margin: 0; padding: 0; font-family: "Open Sans", sans-serif; font-size: 1
 
 [data-details-animation="3"] { background: transparent url("../images/kanban/kanban-smart-p.png") no-repeat; background-size: cover; background-position: 0 0; }
 
+[data-details-animation="4"] { background: transparent url("../images/country/country-app-smart-p.png") no-repeat; background-size: cover; background-position: 0 0; }
+
 @media (max-width: 1200px) { [data-details-animation="1"] { background: transparent url("../images/avax/avax-ent-ipad.png") no-repeat; background-size: cover; background-position: 0 0; } }
 
 .details__animation { animation-name: scroll; animation-duration: 40s; animation-timing-function: linear; animation-iteration-count: infinite; }
@@ -224,12 +226,13 @@ body { margin: 0; padding: 0; font-family: "Open Sans", sans-serif; font-size: 1
 .hamburger { display: none; }
 
 @media (max-width: 992px) { .hamburger { position: absolute; position: fixed; top: 20px; right: 12px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; border: 0; width: 50px; height: 45px; background-color: transparent; z-index: 20; cursor: pointer; }
-  .hamburger:hover .hamburger__bar { width: 130%; }
-  .hamburger:hover .hamburger__bar::before, .hamburger:hover .hamburger__bar::after { width: 100%; }
-  .hamburger__bar { position: relative; width: 100%; height: 4px; background-color: #F7AC54; transition: width 0.3s ease-in-out; }
+  .hamburger__bar { position: relative; width: 100%; height: 4px; background-color: #F7AC54; transition: width 0.3s ease-in-out, transform 0.3s ease-in-out; }
   .hamburger__bar::before, .hamburger__bar::after { content: ''; position: absolute; right: 0; height: 4px; background-color: #F7AC54; transition: width 0.3s ease-in-out; }
-  .hamburger__bar::before { width: 110%; top: -15px; }
-  .hamburger__bar::after { top: 15px; width: 110%; } }
+  .hamburger__bar::before { width: 100%; top: -15px; }
+  .hamburger__bar::after { top: 15px; width: 100%; }
+  .hamburger--toggled .hamburger__bar { transform: rotate(-45deg); }
+  .hamburger--toggled .hamburger__bar::after { transform: translateX(2000px); }
+  .hamburger--toggled .hamburger__bar::before { transform: rotate(90deg) translate3d(15px, 0, 0); } }
 
 .contact-form { box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.5); display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; padding: 4rem; background-color: black; overflow: hidden; }
 
@@ -346,7 +349,7 @@ body { margin: 0; padding: 0; font-family: "Open Sans", sans-serif; font-size: 1
   .article__title::before { left: -65px; }
   .article__title::after { right: -65px; } }
 
-.footer { background-color: #111111; background: url(../images/shattered-island.gif); padding: 8rem 0; }
+.footer { background-color: #202020; background: linear-gradient(135deg, #202020 0%, #202020 50%, #171717 50%, #171717 100%); background: linear-gradient(-135deg, #202020 0%, #202020 50%, #171717 50%, #171717 100%); padding: 8rem 0; }
 
 .footer__title { position: relative; display: -ms-flexbox; display: flex; -ms-flex-item-align: center; align-self: center; margin: 0; margin-bottom: 4rem; padding-bottom: 0; font-family: "Marck Script", cursive; font-size: 4rem; font-weight: 400; line-height: 6.5rem; text-align: center; text-transform: lowercase; color: #F7AC54; }
 
@@ -374,6 +377,8 @@ body { margin: 0; padding: 0; font-family: "Open Sans", sans-serif; font-size: 1
 .headings__category::before { content: ''; position: absolute; top: -125px; left: 0; width: 2px; height: 120px; background-color: #F7AC54; }
 
 .headings__title { position: absolute; top: 100px; left: 30px; font-size: 5.4rem; font-family: "Marck Script", cursive; color: #FFFFFF; }
+
+.headings__title--stroke { text-shadow: 1px 1px 1px #000; }
 
 @media (max-width: 768px) { .headings { position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .headings__button, .headings__title { position: static; }

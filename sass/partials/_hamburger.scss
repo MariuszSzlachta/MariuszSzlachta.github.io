@@ -17,19 +17,12 @@
     background-color: transparent;
     z-index: 20;
     cursor: pointer;
-    &:hover .hamburger__bar{
-      width: 130%;
-    }
-    &:hover .hamburger__bar::before,
-    &:hover .hamburger__bar::after {
-      width: 100%;
-    }
     &__bar {
       position: relative;
       width: 100%;
       height: 4px;
       background-color: $primary-color;
-      transition: width 0.3s ease-in-out;
+      transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
       &::before,
       &::after {
         content: '';
@@ -40,16 +33,22 @@
         transition: width 0.3s ease-in-out;
       }
       &::before {
-        width: 110%;
+        width: 100%;
         top: -15px;
       }
       &::after {
         top: 15px;
-        width: 110%;
+        width: 100%;
       }
     }
-    &.toggled {
-
+    &--toggled .hamburger__bar {
+      transform: rotate(-45deg);
+    }
+    &--toggled .hamburger__bar::after {
+      transform: translateX(2000px);
+    }
+    &--toggled .hamburger__bar::before {
+      transform: rotate(90deg) translate3d(15px, 0, 0);
     }
   }
 }

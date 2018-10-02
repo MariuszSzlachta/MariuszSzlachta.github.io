@@ -226,6 +226,55 @@
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- Country -->
+        <div class="carousel-cell">
+          <div class="project">
+            <div data-content="headings" class="project__headings headings headings--active">
+              <p class="headings__category">Single Page App</p>
+              <h3 class="headings__title headings__title--stroke">Country App</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
+                  <span class="button__text">Project details</span>
+                  <i class=" button__icon icon-arrow-right"></i>
+              </a>
+            </div>
+            <!-- preview początek -->
+            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+              <picture class="preview__picture">
+                <!-- <source media="(min-width: 1200px)" srcset="images/sudoku/sudoku-full.png"> -->
+                <source media="(min-width: 768px)" srcset="images/country/country-app-ipad.png">
+                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/country/country-app-smart-l.jpg">
+                <source media="(min-width: 320px)" srcset="images/country/country-app-preview-smart-p.jpg">
+                <img class="preview__image" src="images/country/country-app-ipad.png" alt="country app miniature">
+              </picture>
+            </div>
+            <!-- preview koniec -->
+            <!-- details początek -->
+            <div data-content="details" class="project__details details col-lg-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 details__text">
+                  <!-- treść -->
+                  <h3 class="details__title">Country App</h3>
+                  <p class="details__category">Single Page App | Juni 2018</p>
+                  <p class="details__text">Here is my version of this common game.</p>
+                  <p class="details__text">This project was created during Web Developer bootcamp. To do my game I used free library <i>Sudoku-umd</i> that generates sudoku. To build front of my app I decided to use React and its 'reactive' rendering was great solution, because I wanted to rerender only that field that changes. I decided to use Redux for state management, that made my state more predictable and it was great opportunity for practicing Redux with React. I tried to create a fully responsive game with functionalities that will allow you to choose the level of difficulty, show hints and even solve the game for you. I hope you will be enjoyed.</p>
+                  <p class="details__text">You can try yourself in sudoku by clicking 'go live' or watch my code and read readme file by clicking 'view code'.</p>
+                  <footer class="details__footer">
+                    <a href="https://github.com/MariuszSzlachta/country-app" target="_blank" class="details__link">view code</a>
+                    <a href="https://mariuszszlachta.github.io/country-app/" target="_blank" class="details__link">go live</a>
+                  </footer>
+                </div>
+                <div data-details-animation="4" class="col-lg-6 col-md-12 details__animation details__animation--slow">
+                  <!-- <img class="details__image" src="images/sudoku-game/sudoku-smart-p.png" alt="sudoku miniature"> -->
+                </div>
+                <!-- <hr class="details__separator"> -->
+                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                  <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
+                  <span class="button__text">Project preview</span>
+                </a>
+              </div>
+            </div>
             <!-- details koniec -->
           </div>
         </div>

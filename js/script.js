@@ -35,23 +35,7 @@ hamburger.addEventListener('click', toggleMenu);
 navbarAnchorLinks.forEach(el => el.addEventListener('click', toggleMenu));
 document.addEventListener('backbutton', toggleMenu);
 // 
-var backPresses = 0;
-var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
-var maxBackPresses = 2;
-function handleBackButton(init) {
-  if (init !== true)
-    backPresses++;
-  if ((!isAndroid && backPresses >= maxBackPresses) || (isAndroid && backPresses >= maxBackPresses - 1)) {
-    window.history.back();
-    toggleMenu();
-  } else {
-    window.history.pushState({}, '');
-  }
-}
-function setupWindowHistoryTricks() {
-    handleBackButton(true);
-    window.addEventListener('popstate', handleBackButton);
-}
+
 // Carousel
 
 const flkty = new Flickity(element, {
