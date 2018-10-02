@@ -43,9 +43,9 @@ function handleBackButton(init) {
     backPresses++;
   if ((!isAndroid && backPresses >= maxBackPresses) || (isAndroid && backPresses >= maxBackPresses - 1)) {
     window.history.back();
+    toggleMenu();
   } else {
     window.history.pushState({}, '');
-    toggleMenu();
   }
 }
 function setupWindowHistoryTricks() {
