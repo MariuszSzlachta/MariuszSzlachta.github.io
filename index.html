@@ -36,7 +36,7 @@
           </a>
         </li>
         <li class="navbar__item">
-          <a href="" class="navbar__link link">
+          <a href="http://www.google.pl" class="navbar__link link">
             <svg class="link__svg">
               <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
@@ -84,7 +84,7 @@
             <div data-content="headings" class="project__headings headings headings--active">
               <p class="headings__category">Landing page</p>
               <h3 class="headings__title">Avax</h3>
-              <a href="#" data-get="details" class="headings__button button" role="button">
+              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
                   <span class="button__text">Project details</span>
                   <i class=" button__icon icon-arrow-right"></i>
               </a>
@@ -119,7 +119,7 @@
                   <!-- foto -->
                 </div>
                 <!-- <hr class="details__separator"> -->
-                <a href="#" data-get="preview" class="details__button button" role="button">
+                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
                   <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
                   <span class="button__text">Project preview</span>
                 </a>
@@ -134,7 +134,7 @@
             <div data-content="headings" class="project__headings headings headings--active">
               <p class="headings__category">Game</p>
               <h3 class="headings__title">Sudoku</h3>
-              <a href="#" data-get="details" class="headings__button button" role="button">
+              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
                   <span class="button__text">Project details</span>
                   <i class=" button__icon icon-arrow-right"></i>
               </a>
@@ -156,20 +156,20 @@
                 <div class="col-lg-6 col-md-12 details__text">
                   <!-- treść -->
                   <h3 class="details__title">Sudoku</h3>
-                  <p class="details__category">Sudoku | August 2018</p>
-                  <p class="details__text">This cool landing page I created from *.psd file. This was very instructive project for me.</p>
-                  <p class="details__text">Many sections of this project pushed me to find best solition. Instead of using regular css I have decided to use scss, and its advantages like splitting components and section to multiple files, variables, and nestings. Avax uses custom theme google maps setted using its api. This approach allows to enjoy maximum performance and look control. Lighweight free carousel Flickity is one of my favorite. Despite its small weight provides many useful features and can be controlled using vanilla js what was my goal, because I didn't want to use JQuery. I need to mention about my script for filtering projects. I'm very proud of it because I could combine 'data-set' and javascript to make it works.</p>
-                  <p class="details__text">It's not possible to write everything just in several sentence. So then I encourage you to get familiar with source code and see how it works online, by clicking buttons down bellow.</p>
+                  <p class="details__category">Game | July 2018</p>
+                  <p class="details__text">Here is my version of this common game.</p>
+                  <p class="details__text">This project was created during Web Developer bootcamp. To do my game I used free library <i>Sudoku-umd</i> that generates sudoku. To build front of my app I decided to use React and its 'reactive' rendering was great solution, because I wanted to rerender only that field that changes. I decided to use Redux for state management, that made my state more predictable and it was great opportunity for practicing Redux with React. I tried to create a fully responsive game with functionalities that will allow you to choose the level of difficulty, show hints and even solve the game for you. I hope you will be enjoyed.</p>
+                  <p class="details__text">You can try yourself in sudoku by clicking 'go live' or watch my code and read readme file by clicking 'view code'.</p>
                   <footer class="details__footer">
                     <a href="https://github.com/MariuszSzlachta/sudoku" target="_blank" class="details__link">view code</a>
                     <a href="https://mariuszszlachta.github.io/sudoku/" target="_blank" class="details__link">go live</a>
                   </footer>
                 </div>
-                <div data-details-animation="1" class="col-lg-6 col-md-12 details__animation">
-                  <!-- foto -->
+                <div data-details-animation="2" class="col-lg-6 col-md-12 details__animation details__animation--fast">
+                  <!-- <img class="details__image" src="images/sudoku-game/sudoku-smart-p.png" alt="sudoku miniature"> -->
                 </div>
                 <!-- <hr class="details__separator"> -->
-                <a href="#" data-get="preview" class="details__button button" role="button">
+                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
                   <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
                   <span class="button__text">Project preview</span>
                 </a>
@@ -179,6 +179,57 @@
           </div>
         </div>
         <!-- end of cell two -->
+        <!-- KANBAN -->
+        <div class="carousel-cell">
+          <div class="project">
+            <div data-content="headings" class="project__headings headings headings--active">
+              <p class="headings__category">Isomorphic App</p>
+              <h3 class="headings__title">Kanban</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
+                  <span class="button__text">Project details</span>
+                  <i class=" button__icon icon-arrow-right"></i>
+              </a>
+            </div>
+            <!-- preview początek -->
+            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+              <picture class="preview__picture">
+                <!-- <source media="(min-width: 1200px)" srcset="images/sudoku/sudoku-full.png"> -->
+                <source media="(min-width: 768px)" srcset="images/kanban/kanban-ipad.png">
+                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/kanban/kanban-smart-l.png">
+                <source media="(min-width: 320px)" srcset="images/kanban/kanban-smart-p.png">
+                <img class="preview__image" src="images/kanban/kanban-ipad.png" alt="kanban project miniature">
+              </picture>
+            </div>
+            <!-- preview koniec -->
+            <!-- details początek -->
+            <div data-content="details" class="project__details details col-lg-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 details__text">
+                  <!-- treść -->
+                  <h3 class="details__title">Kanban</h3>
+                  <p class="details__category">Isomorphic app | July 2018</p>
+                  <p class="details__text">Here is my version of this common game.</p>
+                  <p class="details__text">This project was created during Web Developer bootcamp. To do my game I used free library <i>Sudoku-umd</i> that generates sudoku. To build front of my app I decided to use React and its 'reactive' rendering was great solution, because I wanted to rerender only that field that changes. I decided to use Redux for state management, that made my state more predictable and it was great opportunity for practicing Redux with React. I tried to create a fully responsive game with functionalities that will allow you to choose the level of difficulty, show hints and even solve the game for you. I hope you will be enjoyed.</p>
+                  <p class="details__text">You can try yourself in sudoku by clicking 'go live' or watch my code and read readme file by clicking 'view code'.</p>
+                  <footer class="details__footer">
+                    <a href="https://github.com/MariuszSzlachta/KanbanApp" target="_blank" class="details__link">view code</a>
+                    <a href="https://kanban--app.herokuapp.com/" target="_blank" class="details__link">go live</a>
+                  </footer>
+                </div>
+                <div data-details-animation="3" class="col-lg-6 col-md-12 details__animation details__animation--normal">
+                  <!-- <img class="details__image" src="images/sudoku-game/sudoku-smart-p.png" alt="sudoku miniature"> -->
+                </div>
+                <!-- <hr class="details__separator"> -->
+                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                  <i class=" button__icon button__icon--reverse icon-arrow-left"></i>
+                  <span class="button__text">Project preview</span>
+                </a>
+              </div>
+            </div>
+            <!-- details koniec -->
+          </div>
+        </div>
+        <!-- end of cell three -->
       </div>
     </div>
   </section>
@@ -217,6 +268,13 @@
   </footer>
   <script src="vendor/flickity.pkgd.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]', {
+    easing: 'easeOutQuint',
+    speed: 900
+    });
+  </script>
 
 </body>
 </html>

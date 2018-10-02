@@ -2,6 +2,7 @@
 const nav = document.querySelector('.nav');
 const hamburger = document.querySelector('.hamburger')
 const navbar = document.querySelector('.navbar');
+const navbarAnchorLinks = document.querySelectorAll('a[href*="#"]');
 const element = document.querySelector('.carousel');
 let inputs = document.querySelectorAll('.contact-form__input');
 let textarea = document.querySelector('.contact-form__textarea');
@@ -18,8 +19,7 @@ function toggleNavStyles(){
 document.addEventListener('scroll', toggleNavStyles);
 // HAMBURGER
 
-
-hamburger.addEventListener('click', function(){
+function toggleMenu(){
   if (hamburger.classList.contains('hamburger--toggled')) {
     nav.classList.remove('nav--toggled');
     navbar.classList.remove('navbar--toggled');
@@ -29,7 +29,11 @@ hamburger.addEventListener('click', function(){
     navbar.classList.add('navbar--toggled');
     hamburger.classList.add('hamburger--toggled');
   };
-});
+}
+
+hamburger.addEventListener('click', toggleMenu);
+navbarAnchorLinks.forEach(el => el.addEventListener('click', toggleMenu));
+document.addEventListener('backbutton', toggleMenu);
 // Carousel
 
 const flkty = new Flickity(element, {

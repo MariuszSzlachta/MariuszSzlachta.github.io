@@ -80,6 +80,16 @@
   background-size: cover;
   background-position: 0 0;
 }
+[data-details-animation="2"] {
+  background: transparent url('../images/sudoku-game/sudoku-smart-p.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+[data-details-animation="3"] {
+  background: transparent url('../images/kanban/kanban-smart-p.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
 @media (max-width: 1200px) {
   [data-details-animation="1"] {
     background: transparent url('../images/avax/avax-ent-ipad.png') no-repeat;
@@ -94,6 +104,15 @@
   animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.details__animation--normal {
+  animation-duration: 20s;
+}
+.details__animation--slow {
+  animation-duration: 40s;
+}
+.details__animation--fast {
+  animation-duration: 10s;
 }
 @keyframes scroll {
   0% {
