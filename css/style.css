@@ -667,6 +667,21 @@ body {
   line-height: 2;
 }
 
+::-moz-selection {
+  color: #000;
+  background: #F7AC54;
+}
+
+::selection {
+  color: #000;
+  background: #F7AC54;
+}
+
+::-moz-selection {
+  color: #000;
+  background: #F7AC54;
+}
+
 .section,
 .article {
   padding: 8rem 12px;
