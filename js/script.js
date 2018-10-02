@@ -45,6 +45,7 @@ function handleBackButton(init) {
     window.history.back();
   } else {
     window.history.pushState({}, '');
+    toggleMenu();
   }
 }
 function setupWindowHistoryTricks() {
