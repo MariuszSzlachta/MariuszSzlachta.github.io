@@ -7,6 +7,7 @@ const element = document.querySelector('.carousel');
 let inputs = document.querySelectorAll('.contact-form__input');
 let textarea = document.querySelector('.contact-form__textarea');
 const submitButton = document.querySelector('.submit');
+let inputsLen = inputs.length;
 
 // navbar show/hide
 function toggleNavStyles(){
@@ -32,9 +33,11 @@ function toggleMenu(){
 }
 
 hamburger.addEventListener('click', toggleMenu);
-navbarAnchorLinks.forEach(el => el.addEventListener('click', toggleMenu));
 document.addEventListener('backbutton', toggleMenu);
-// 
+
+for (let i = 0; i < navbarAnchorLinks.length; i++) {
+  navbarAnchorLinks[i].addEventListener('click', toggleMenu);
+}
 
 // Carousel
 
@@ -50,21 +53,28 @@ const flkty = new Flickity(element, {
 
 // contact-form value checker for toggle styles
 inputs = [...inputs];
-inputs.forEach(el => el.addEventListener('mouseover', checkContent));
+
+for (let j = 0; j < inputsLen; j++) {
+  inputs[j].addEventListener('mouseover', checkContent);
+}
+
 document.addEventListener("DOMContentLoaded", function(event) { 
   clearForm();
 });
 
 function checkContent(){
   textarea.value.length !== 0 ? textarea.classList.add('contact-form__textarea--not-empty') : textarea.classList.remove('contact-form__textarea--not-empty');
-  inputs.forEach(el => {
-    el.value.length !== 0 ? el.classList.add('contact-form__input--not-empty') : el.classList.remove('contact-form__input--not-empty');
-  });
+
+  for (let i = 0; i < inputsLen; i++) {
+    inputs[i].value.length !== 0 ? inputs[i].classList.add('contact-form__input--not-empty') : inputs[i].classList.remove('contact-form__input--not-empty');
+  }
 }
 function clearForm() {
-  textarea.value = '',
-  inputs.forEach(el => el.value = '');
-}
+  textarea.value = '';
+  for (let i = 0; i < inputsLen; i++) {
+    inputs[i].value = '';
+  };
+};
 
 // Projects controll
 const flktyVP = document.querySelector('.flickity-viewport');
@@ -75,22 +85,22 @@ const headings = document.querySelectorAll('[data-content="headings"]');
 const details = document.querySelectorAll('[data-content="details"]');
 
 // Listeners for show details
-for (let i = 0; i < showDetailsBtns.length; i++) {
-  showDetailsBtns[i].addEventListener('click', function(e){
+for (let k = 0; k < showDetailsBtns.length; k++) {
+  showDetailsBtns[k].addEventListener('click', function(e){
     e.preventDefault();
-    headings[i].classList.remove('headings--active');
-    previews[i].classList.remove('preview--active');
-    details[i].classList.add('details--active');
-    flktyVP.classList.add('expanded');
+    headings[k].classList.remove('headings--active');
+    previews[k].classList.remove('preview--active');
+    details[k].classList.add('details--active');
+    flkty.resize();
   });
 }
 // Listeners for show preview
-for (let i = 0; i < showPreviewBtns.length; i++) {
-  showPreviewBtns[i].addEventListener('click', function(e){
+for (let l = 0; l < showPreviewBtns.length; l++) {
+  showPreviewBtns[l].addEventListener('click', function(e){
     e.preventDefault();
-    headings[i].classList.add('headings--active');
-    previews[i].classList.add('preview--active');
-    details[i].classList.remove('details--active');
-    flktyVP.classList.remove('expanded');
+    headings[l].classList.add('headings--active');
+    previews[l].classList.add('preview--active');
+    details[l].classList.remove('details--active');
+    flkty.resize()
   });
 }

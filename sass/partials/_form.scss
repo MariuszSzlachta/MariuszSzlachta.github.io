@@ -1,4 +1,7 @@
-.contact .outer {
+input:required,
+textarea:required {
+  box-shadow: none;
+  outline: none;
 }
 .contact-form {
   box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.5);
@@ -93,8 +96,6 @@
   }
   &__icon {
     display: inline-block;
-    margin-right: 10px;
-    vertical-align: sub;
     transition: transform 0.3s ease-in-out;
   }
 }

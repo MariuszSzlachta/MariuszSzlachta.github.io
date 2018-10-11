@@ -2,8 +2,10 @@
   background-color: $background-1;
   background: linear-gradient(135deg, $background-1 0%, $background-1 50%, $background-2 50%, $background-2 100%);
   background: linear-gradient(-135deg, $background-1 0%, $background-1 50%, $background-2 50%, $background-2 100%);
-
   padding: 8rem 0;
+  &__bar {
+    margin-top: 1rem;
+  }
   &__title {
     position: relative;
     display: flex;
@@ -32,6 +34,29 @@
     }
     &::after {
       right: -130px;
+    }
+  }
+  &__copy{
+    font-size: 1.6rem;
+    text-align: center;
+    color: $light-text;
+    &--highlighted {
+      color: $primary-color;
+    }
+  }
+}
+.social-media {
+  display: flex;
+  list-style: none;
+  &__item {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  &__link {
+    color: $light-text;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: $primary-color;
     }
   }
 }
