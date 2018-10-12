@@ -321,8 +321,19 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <h2 class="modal__header">Info</h2>
+    <p class="modal__text">Hi user of the Internet Explorer. To fully enjoy using this website please consider download more secure browser.</p>
+    <div class="modal__link-container">
+      <a href="https://www.google.com/intl/pl_ALL/chrome/" target="_blank" class="modal__link">Chrome</a>
+      <a href="https://www.mozilla.org/pl/firefox/new/" target="_blank" class="modal__link">Firefox</a>
+      <a href="https://www.opera.com/pl/download" target="_blank" class="modal__link">Opera</a>
+    </div>
+    <button class="modal__close">close</button>
+  </div>
   <script src="public/vendor.bundle.min.js"></script>
   <script src="public/script.bundle.min.js"></script>
+  <!-- <script src="js/script.js"></script> -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
   <script>
     const scroll = new SmoothScroll('a[href*="#"]', {

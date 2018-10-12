@@ -1,0 +1,51 @@
+.modal {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 200;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: $background-1;
+  border: 1px solid $primary-color;
+  &--opened {
+    display: flex;
+  }
+  &__header {
+    border-bottom: 1px solid $primary-color;
+    text-align: center;
+    font-size: 2rem;
+    color: $primary-color;
+  }
+  &__text {
+    text-align: center;
+    font-size: 1.4rem;
+    color: $pera-text;
+  }
+  &__link-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    color: $pera-text;
+  }
+  &__close {
+    margin: 2rem auto 1rem;
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1rem;
+    background: $primary-color;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: $background-1;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+  }
+}

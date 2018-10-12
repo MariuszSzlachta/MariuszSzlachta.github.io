@@ -84,6 +84,10 @@ const previews = document.querySelectorAll('[data-content="preview"]');
 const headings = document.querySelectorAll('[data-content="headings"]');
 const details = document.querySelectorAll('[data-content="details"]');
 
+window.addEventListener('load', function(){
+  flkty.resize();
+})
+
 // Listeners for show details
 for (let k = 0; k < showDetailsBtns.length; k++) {
   showDetailsBtns[k].addEventListener('click', function(e){
@@ -101,6 +105,19 @@ for (let l = 0; l < showPreviewBtns.length; l++) {
     headings[l].classList.add('headings--active');
     previews[l].classList.add('preview--active');
     details[l].classList.remove('details--active');
-    flkty.resize()
+    flkty.resize();
   });
 }
+
+// modal and FF flickity size fix
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close');
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (navigator.userAgent.match(/Trident\/7.0;/) !== null){
+    modal.classList.add('modal--opened');
+  }
+});
+
+modalClose.addEventListener('click', function(){
+  modal.classList.remove('modal--opened');
+});
