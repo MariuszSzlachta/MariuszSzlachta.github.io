@@ -28,6 +28,9 @@
 
 .clip {
   position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
   display: block;
   font-family: $jumbo-font;
   font-size: 14rem;

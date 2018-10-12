@@ -860,7 +860,6 @@ body {
 
 @media (max-width: 992px) {
   .hamburger {
-    position: absolute;
     position: fixed;
     top: 20px;
     right: 12px;
@@ -1126,7 +1125,7 @@ textarea:required {
         justify-content: flex-end;
     -ms-flex-align: center;
         align-items: center;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: transparent;
     transition: background-color 0.8s ease-in-out, height 0.8s ease-in-out;
