@@ -10,14 +10,13 @@
   <link href="https://fonts.googleapis.com/css?family=Marck+Script|Open+Sans:400,600|Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="public/vendor.min.css">
-  <link rel="stylesheet" href="vendor/rik-icons/styles.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Mariusz Szlachta</title>
 </head>
 <body>
   <nav class="nav">
     <div class="container">
-      <button class="hamburger">
+      <button class="hamburger" aria-label="menu toggler">
         <span class="hamburger__bar"></span>
       </button>
       <ul class="navbar">
@@ -112,8 +111,8 @@
                   <p class="details__text">Many sections of this project pushed me to&nbsp;find the&nbsp;best solution. Instead of&nbsp;using regular css I've decided to&nbsp;use scss and its advantages, for example: splitting components and&nbsp;sections into multiple files, variables, and&nbsp;nestings. Avax uses a&nbsp;custom themes for google maps settedwith use of&nbsp;its&nbsp;API. This approach allows to&nbsp;enjoy maximum performance as well as control of&nbsp;visual appearance. Lighweight free carousel Flickity is one of&nbsp;my favorite. Despite its small weight it&nbsp;provides many useful features and&nbsp;it can be controlled using vanilla js which was my&nbsp;goal, because I&nbsp;didn’t want to use JQuery. I&nbsp;need to mention something about my script for filtering projects. I'm very proud of&nbsp;it because I&nbsp;was able to&nbsp;combine 'data-set' and&nbsp;javascript to&nbsp;make it work.</p>
                   <p class="details__text">It's not possible to&nbsp;write everything just in&nbsp;several sentences. That is why I&nbsp;encourage you to get familiar with the source code and see how it works online by&nbsp;clicking proper buttons down below.</p>
                   <footer class="details__footer">
-                    <a href="https://github.com/MariuszSzlachta/AVAX" target="_blank" class="details__link">view code</a>
-                    <a href="https://mariuszszlachta.github.io/AVAX/" target="_blank" class="details__link">go live</a>
+                    <a href="https://github.com/MariuszSzlachta/AVAX" target="_blank" rel="noopener" class="details__link">view code</a>
+                    <a href="https://mariuszszlachta.github.io/AVAX/" target="_blank" rel="noopener" class="details__link">go live</a>
                   </footer>
                 </div>
                 <div data-details-animation="1" class="col-lg-6 col-md-12 details__animation">
@@ -160,8 +159,8 @@
                   <p class="details__text">This project was created during a&nbsp;Web Developer bootcamp. To make my game I&nbsp;used the free library „Sudoku-umd” that generates sudoku. To build front of&nbsp;my app I&nbsp;decided to&nbsp;use React, and its 'reactive' rendering was a&nbsp;great solution, because I&nbsp;wanted to&nbsp;rerender only that the field that changes. I&nbsp;decided to&nbsp;use Redux for state management, that made the state of&nbsp;the app more predictable and it was a&nbsp;great opportunity for practicing Redux with React. I tried to&nbsp;create a&nbsp;fully responsive game with functionalities that will allow you to&nbsp;choose the&nbsp;level of&nbsp;difficulty, show some hints and even solve the game for you. I&nbsp;hope you will enjoy it.</p>
                   <p class="details__text">You can try sudoku for yourself by&nbsp;clicking 'go live' or&nbsp;watch my code and&nbsp;read the&nbsp;readme file by&nbsp;clicking the 'view code'.</p>
                   <footer class="details__footer">
-                    <a href="https://github.com/MariuszSzlachta/sudoku" target="_blank" class="details__link">view code</a>
-                    <a href="https://mariuszszlachta.github.io/sudoku/" target="_blank" class="details__link">go live</a>
+                    <a href="https://github.com/MariuszSzlachta/sudoku" target="_blank" rel="noopener" class="details__link">view code</a>
+                    <a href="https://mariuszszlachta.github.io/sudoku/" target="_blank" rel="noopener" class="details__link">go live</a>
                   </footer>
                 </div>
                 <div data-details-animation="2" class="col-lg-6 col-md-12 details__animation details__animation--fast">
@@ -208,8 +207,8 @@
                   <p class="details__text">From a technical side, the application is&nbsp;as&nbsp;follows. On backend I've used Express.js to&nbsp;create a&nbsp;server. RESTful API is responsible for&nbsp;handling the&nbsp;CRUD operation on&nbsp;mongoDB database (hosted on MLab). Of&nbsp;course I’ve used a&nbsp;Mongoose to make a&nbsp;work with database more comfortable. To generate modules, components, models I've&nbsp;chosen a&nbsp;mern generator that uses EJS templates. A&nbsp;development environment is&nbsp;managed by&nbsp;Webpack and NPM scripts. On&nbsp;frontend views are generated by&nbsp;React while Redux manages a&nbsp;state of the app. Since it's an&nbsp;isomorphic application, its state is&nbsp;managed asynchronously by&nbsp;Redux-thunk. The whole project was based on&nbsp;the MERN-template.</p>
                   <p class="details__text">The application has been placed on&nbsp;the&nbsp;Heroku website, therefore the&nbsp;first launch might take a&nbsp;while, because Heroku disables applications that are not currently in use.</p>
                   <footer class="details__footer">
-                    <a href="https://github.com/MariuszSzlachta/KanbanApp" target="_blank" class="details__link">view code</a>
-                    <a href="https://kanban--app.herokuapp.com/" target="_blank" class="details__link">go live</a>
+                    <a href="https://github.com/MariuszSzlachta/KanbanApp" target="_blank" rel="noopener" class="details__link">view code</a>
+                    <a href="https://kanban--app.herokuapp.com/" target="_blank" rel="noopener" class="details__link">go live</a>
                   </footer>
                 </div>
                 <div data-details-animation="3" class="col-lg-6 col-md-12 details__animation details__animation--normal">
@@ -254,8 +253,8 @@
                   <p class="details__text">The app was created with React and React Router libraries, and entire rendering lies with a&nbsp;client side. Information about countries are&nbsp;loaded from *.json file. A&nbsp;user can filter the list of&nbsp;countries depending on&nbsp;a&nbsp;chosen continent. Clicking the&nbsp;flag app enables viewing a&nbsp;proper component that presents detailed information about a&nbsp;chosen country. There are also buttons for&nbsp;removing a&nbsp;country from the list. By&nbsp;using the&nbsp;contact component, you can go to&nbsp;my portfolio or&nbsp;send me an&nbsp;e-mail. You can switch between main components using navbar on&nbsp;top.</p>
                   <p class="details__text">The process of&nbsp;creation of&nbsp;this application has helped me to&nbsp;understand the philosophy of SPA, as&nbsp;well as&nbsp;to practice the most popular frontend javascript libraries.</p>
                   <footer class="details__footer">
-                    <a href="https://github.com/MariuszSzlachta/country-app" target="_blank" class="details__link">view code</a>
-                    <a href="https://mariuszszlachta.github.io/country-app/" target="_blank" class="details__link">go live</a>
+                    <a href="https://github.com/MariuszSzlachta/country-app" rel="noopener" target="_blank" class="details__link">view code</a>
+                    <a href="https://mariuszszlachta.github.io/country-app/" target="_blank" rel="noopener" class="details__link">go live</a>
                   </footer>
                 </div>
                 <div data-details-animation="4" class="col-lg-6 col-md-12 details__animation details__animation--slow">
@@ -298,7 +297,7 @@
                 </div>
                 <button class="contact-form__submit submit">
                   <span class="submit__text">Get in touch</span>
-                  <i class=" contact-form__icon icon fas fa-long-arrow-alt-right"></i>
+                  <i class="contact-form__icon icon fas fa-long-arrow-alt-right"></i>
                 </button>
             </div>
           </form>
@@ -308,12 +307,12 @@
         <p class="footer__copy">Mariusz Szlachta <span class="footer__copy--highlighted">&copy;</span></p>
         <ul class="social-media">
           <li class="social-media__item">
-            <a href="https://github.com/MariuszSzlachta" target="_blank" class="social-media__link">
+            <a href="https://github.com/MariuszSzlachta" target="_blank" rel="noopener" class="social-media__link" aria-label="github">
               <span class="fab fa-github"></span>
             </a>
           </li>
           <li class="social-media__item">
-            <a href="https://www.linkedin.com/in/mariusz-szlachta/" target="_blank" class="social-media__link">
+            <a href="https://www.linkedin.com/in/mariusz-szlachta/" target="_blank" rel="noopener" class="social-media__link" aria-label="linkedin">
               <span class="fab fa-linkedin-in"></span>
             </a>
           </li>
@@ -325,12 +324,13 @@
     <h2 class="modal__header">Info</h2>
     <p class="modal__text">Hi user of the Internet Explorer. To fully enjoy using this website please consider download more secure browser.</p>
     <div class="modal__link-container">
-      <a href="https://www.google.com/intl/pl_ALL/chrome/" target="_blank" class="modal__link">Chrome</a>
+      <a href="https://www.google.com/intl/pl_ALL/chrome/" target="_blank" rel="noopener" rel="noopener" class="modal__link">Chrome</a>
       <a href="https://www.mozilla.org/pl/firefox/new/" target="_blank" class="modal__link">Firefox</a>
-      <a href="https://www.opera.com/pl/download" target="_blank" class="modal__link">Opera</a>
+      <a href="https://www.opera.com/pl/download" target="_blank" rel="noopener" class="modal__link">Opera</a>
     </div>
     <button class="modal__close">close</button>
   </div>
+
   <script src="public/vendor.bundle.min.js"></script>
   <script src="public/script.bundle.min.js"></script>
   <!-- <script src="js/script.js"></script> -->

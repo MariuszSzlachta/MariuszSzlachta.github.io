@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: $black url('../images/jumbo-2k.jpg') no-repeat;
+  background: $black url('../images/jumbotron/jumbo-2k.jpg') no-repeat;
   background-position: center top;
   background-size: cover;
 
@@ -41,14 +41,14 @@
 }
 @media (max-width: 1200px) {
   .jumbotron {
-    background: $black url('../images/jumbo-lap.jpg') no-repeat;
+    background: $black url('../images/jumbotron/jumbo-lap.jpg') no-repeat;
     background-position: center top;
     background-size: cover;
   }
 }
 @media (max-width: 1200px) and (orientation: portrait){
   .jumbotron {
-    background: $black url('../images/jumbo-lap.jpg') no-repeat;
+    background: $black url('../images/jumbotron/jumbo-lap.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
   }
@@ -88,7 +88,7 @@
 
 @media (max-width: 480px) {
   .jumbotron {
-    background: $black url('../images/jumbo-mobile.jpg') no-repeat;
+    background: $black url('../images/jumbotron/jumbo-mobile.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     &__title {
@@ -106,7 +106,7 @@
 }
 @media (max-width: 320px) {
   .jumbotron {
-    background: $black url('../images/jumbo-mobile.jpg') no-repeat;
+    background: $black url('../images/jumbotron/jumbo-mobile.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     &__title {

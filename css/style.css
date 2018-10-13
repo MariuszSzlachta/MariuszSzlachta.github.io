@@ -1243,7 +1243,7 @@ textarea:required {
   -ms-flex-align: center;
       align-items: center;
   height: 100vh;
-  background: #000 url("../images/jumbo-2k.jpg") no-repeat;
+  background: #000 url("../images/jumbotron/jumbo-2k.jpg") no-repeat;
   background-position: center top;
   background-size: cover;
 }
@@ -1281,7 +1281,7 @@ textarea:required {
 
 @media (max-width: 1200px) {
   .jumbotron {
-    background: #000 url("../images/jumbo-lap.jpg") no-repeat;
+    background: #000 url("../images/jumbotron/jumbo-lap.jpg") no-repeat;
     background-position: center top;
     background-size: cover;
   }
@@ -1289,7 +1289,7 @@ textarea:required {
 
 @media (max-width: 1200px) and (orientation: portrait) {
   .jumbotron {
-    background: #000 url("../images/jumbo-lap.jpg") no-repeat;
+    background: #000 url("../images/jumbotron/jumbo-lap.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
   }
@@ -1327,7 +1327,7 @@ textarea:required {
 
 @media (max-width: 480px) {
   .jumbotron {
-    background: #000 url("../images/jumbo-mobile.jpg") no-repeat;
+    background: #000 url("../images/jumbotron/jumbo-mobile.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
   }
@@ -1346,7 +1346,7 @@ textarea:required {
 
 @media (max-width: 320px) {
   .jumbotron {
-    background: #000 url("../images/jumbo-mobile.jpg") no-repeat;
+    background: #000 url("../images/jumbotron/jumbo-mobile.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
   }
@@ -1501,6 +1501,7 @@ textarea:required {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding-left: 15px;
 }
 
 .social-media__item {
@@ -1773,7 +1774,7 @@ textarea:required {
   position: absolute;
   top: 35px;
   left: 0;
-  width: 135px;
+  width: 147px;
   height: 2px;
   background-color: #F7AC54;
 }
