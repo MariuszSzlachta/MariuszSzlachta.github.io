@@ -7,11 +7,14 @@
 // ustawić stałą wysokość tak by pasowało ale dostosowac ją w zależności od media queries by ładnie wyglądało
 }
 .flickity-viewport {
-  // min-height: 520px;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: content-box;
 }
 .flickity-page-dots {
   margin: 2rem 0;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   .dot {
     margin: 0 20px;
     width: 30px;
@@ -21,6 +24,27 @@
   }
   .dot.is-selected {
     background-color: $primary-color;
+  }
+}
+.flickity-button {
+  background:transparent;
+  &:hover {
+    background: transparent;
+  }
+  &:hover .flickity-button-icon {
+    fill: $light-text;
+  }
+}
+.flickity-button-icon {
+  fill: $pera-text;
+}
+.flickity-prev-next-button {
+  top: 100%;
+  &.previous {
+    left: 100px;
+  }
+  &.next {
+    right: 100px;
   }
 }
 .portfolio {
@@ -39,7 +63,19 @@
     margin-bottom: 2rem;
   }
   .flickity-page-dots {
+    left: 50%;
+    transform: translateX(-50%);
     margin: 2rem 0;
+    width: 85%;
+  }
+  .flickity-prev-next-button {
+    top: 100%;
+    &.previous {
+      left: -10px;
+    }
+    &.next {
+      right: -10px;
+    }
   }
   .project {
     display: flex;

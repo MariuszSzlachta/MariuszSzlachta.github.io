@@ -52,7 +52,7 @@ var flkty = new Flickity(element, {
   pageDots: true,
   autoPlay: false,
   adaptiveHeight: true,
-  prevNextButtons: false
+  prevNextButtons: true
 });
 
 // contact-form value checker for toggle styles
@@ -116,6 +116,7 @@ var _loop2 = function _loop2(l) {
     previews[l].classList.add('preview--active');
     details[l].classList.remove('details--active');
     flkty.resize();
+    new WOW().init();
   });
 };
 
@@ -137,7 +138,8 @@ modalClose.addEventListener('click', function () {
 });
 // Animations fire
 // on reveal
-var reveal = new WOW();
-reveal.init();
+new WOW().init();
 // on slide change
-flkty.on('dragEnd', reveal.init());
+flkty.on('settle', function(){
+  new WOW().init();
+});

@@ -48,7 +48,7 @@ const flkty = new Flickity(element, {
     pageDots: true,
     autoPlay: false,
     adaptiveHeight: true,
-    prevNextButtons: false
+    prevNextButtons: true
 });
 
 // contact-form value checker for toggle styles
@@ -83,6 +83,7 @@ const showPreviewBtns = document.querySelectorAll('[data-get="preview"]');
 const previews = document.querySelectorAll('[data-content="preview"]');
 const headings = document.querySelectorAll('[data-content="headings"]');
 const details = document.querySelectorAll('[data-content="details"]');
+const detailsActive = document.getElementsByClassName('details--active');
 
 window.addEventListener('load', function(){
   flkty.resize();
@@ -106,6 +107,7 @@ for (let l = 0; l < showPreviewBtns.length; l++) {
     previews[l].classList.add('preview--active');
     details[l].classList.remove('details--active');
     flkty.resize();
+    new WOW().init();
   });
 }
 

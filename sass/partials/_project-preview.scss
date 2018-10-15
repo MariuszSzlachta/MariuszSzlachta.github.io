@@ -21,3 +21,8 @@
     object-fit: cover;
   }
 }
+@media (max-width: 768px) {
+  .preview--active {
+    min-height: 300px;
+  }
+}

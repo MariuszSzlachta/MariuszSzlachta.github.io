@@ -22,18 +22,43 @@ body {
   color: $black;
   background: $primary-color;
 }
-
+.ieFlexFix {
+  display: flex;
+  flex-direction: row;
+}
 .section,
-.article {
+.article,
+.footer {
   padding: 8rem 12px;
   &__title {
+    position: relative;
+    display: flex;
+    align-self: center;
     margin: 0;
+    margin-bottom: 4rem;
     padding-bottom: 0;
-    font-family: $primary-font;
+    font-family: $secondary-font;
     font-size: 4rem;
     font-weight: 400;
     line-height: 6.5rem;
     text-align: center;
+    text-transform: lowercase;
+    color: $primary-color;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 2px;
+      width: 100px;
+      background-color: $light-text;
+    }
+    &::before {
+      left: -130px;
+    }
+    &::after {
+      right: -130px;
+    }
   }
   &__subtitle {
     margin-bottom: 0;
@@ -48,5 +73,31 @@ body {
 @media (max-width: 768px) {
   .section {
     padding: 4rem 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section,
+  .article,
+  .footer {
+    padding: 4rem 12px;
+  }
+  .section__title::before,
+  .section__title::after,
+  .article__title::before,
+  .article__title::after,
+  .footer__title::before,
+  .footer__title::after {
+    width: 50px;
+  }
+  .section__title::before,
+  .article__title::before,
+  .footer__title::before {
+    left: -65px;
+  }
+  .section__title::after,
+  .article__title::after,
+  .footer__title::after {
+    right: -65px;
   }
 }
