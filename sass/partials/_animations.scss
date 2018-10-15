@@ -2,9 +2,11 @@
 
 .link {
   &:hover .link__rect {
-    stroke-dasharray: 100, 400;
-    stroke-dashoffset: 764;
     stroke: $light-text;
+    animation-name: rect-animation;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
   }
   &:hover .link__text {
     color: $primary-color;
@@ -28,14 +30,25 @@
   &__rect {
     stroke: $primary-color;
     stroke-width: 4;
-    transition: 0.7s ease-in-out;
+    transition: stroke 0.3s ease-in-out;
     stroke-dasharray: 100, 400;
     stroke-dashoffset: 264;
+
   }
   &__icon {
     margin-left: 5px;
     vertical-align: sub;
     color: $primary-color;
+  }
+}
+@keyframes rect-animation {
+  from {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 264;
+  }
+  to {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 764;
   }
 }
 
@@ -52,6 +65,16 @@
       transition: 0.7s ease-in-out;
       stroke-dasharray: 100, 400;
       stroke-dashoffset: 145;
+    }
+  }
+  @keyframes rect-animation {
+    from {
+      stroke-dasharray: 100, 400;
+      stroke-dashoffset: 145;
+    }
+    to {
+      stroke-dasharray: 100, 400;
+      stroke-dashoffset: 645;
     }
   }
 }
@@ -127,4 +150,12 @@
   100% {
     background-position: 0 0;
   }
+}
+
+.blurIn { animation-name: blurIn }
+@keyframes blurIn {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+    }
 }

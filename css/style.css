@@ -715,9 +715,11 @@ body {
 }
 
 .link:hover .link__rect {
-  stroke-dasharray: 100, 400;
-  stroke-dashoffset: 764;
   stroke: #FFFFFF;
+  animation-name: rect-animation;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .link:hover .link__text {
@@ -746,7 +748,7 @@ body {
 .link__rect {
   stroke: #F7AC54;
   stroke-width: 4;
-  transition: 0.7s ease-in-out;
+  transition: stroke 0.3s ease-in-out;
   stroke-dasharray: 100, 400;
   stroke-dashoffset: 264;
 }
@@ -755,6 +757,17 @@ body {
   margin-left: 5px;
   vertical-align: sub;
   color: #F7AC54;
+}
+
+@keyframes rect-animation {
+  from {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 264;
+  }
+  to {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 764;
+  }
 }
 
 @media (max-width: 992px) {
@@ -769,6 +782,16 @@ body {
     transition: 0.7s ease-in-out;
     stroke-dasharray: 100, 400;
     stroke-dashoffset: 145;
+  }
+  @keyframes rect-animation {
+    from {
+      stroke-dasharray: 100, 400;
+      stroke-dashoffset: 145;
+    }
+    to {
+      stroke-dasharray: 100, 400;
+      stroke-dashoffset: 645;
+    }
   }
 }
 
@@ -851,6 +874,17 @@ body {
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+.blurIn {
+  animation-name: blurIn;
+}
+
+@keyframes blurIn {
+  from {
+    filter: blur(20px);
+    opacity: 0;
   }
 }
 

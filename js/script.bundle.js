@@ -135,3 +135,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 modalClose.addEventListener('click', function () {
   modal.classList.remove('modal--opened');
 });
+// Animations fire
+// on reveal
+var reveal = new WOW();
+reveal.init();
+// on slide change
+flkty.on('dragEnd', reveal.init());

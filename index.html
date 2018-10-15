@@ -19,7 +19,7 @@
       <button class="hamburger" aria-label="menu toggler">
         <span class="hamburger__bar"></span>
       </button>
-      <ul class="navbar">
+      <ul class="navbar wow fadeInDown">
         <li class="navbar__item">
           <a href="#about-me" class="navbar__link link">
             <svg class="link__svg">
@@ -68,7 +68,7 @@
         <div class="col-lg-4 col-sm-12">
           <img src="" alt="My foto" class="article__image">
         </div>
-        <div class="col-lg-8 col-sm-12">
+        <div class="col-lg-8 col-sm-12 wow fadeIn">
           <p class="article__content">My name is Mariusz. I'm&nbsp;an&nbsp;ambitious web developer with a&nbsp;creative approach for&nbsp;solving problems and&nbsp;a&nbsp;huge dose of&nbsp;sense of&nbsp;humor. Creating applications and websites gives me great satisfaction. I&nbsp;love the feeling when complex parts of&nbsp;code become clear and&nbsp;problems, previously impossible to&nbsp;solve, become easy to&nbsp;overwcome.</p>
           <p class="article__content">I'm a graduate of&nbsp;the&nbsp;Web&nbsp;Developer bootcamp organized by&nbsp;Kodilla, during which I&nbsp;built solid foundation in&nbsp;the&nbsp;area of&nbsp;web apps development based on&nbsp;the&nbsp;most popular Javascript technologies. In&nbsp;my&nbsp;projects I'm eager to&nbsp;use solutions offered by&nbsp;ReactJS and state management provided by&nbsp;Redux. SASS in&nbsp;SCSS syntax became my friend. Task automation using npm and&nbsp;building applications using a&nbsp;webpack is&nbsp;almost an&nbsp;indispensable standard in&nbsp;my&nbsp;work. It's g­reat that during the bootcamp I&nbsp;was able to&nbsp;get familiar with backend technologies such as&nbsp;MongoDB with&nbsp;Mongoose, Node.js and Express. However, the most valuable thing I've learned is&nbsp;that <i class="article__content article__content--i">nothing is impossible.</i></p>
           <p class="article__content">I'm currently looking for a&nbsp;job which will give me an&nbsp;opportunity to&nbsp;be&nbsp;involved in&nbsp;ambitious and&nbsp;interesting projects. I&nbsp;want to&nbsp;constantly develop my&nbsp;skills and&nbsp;learn from more experienced team members. I&nbsp;encourage you to&nbsp;familiarize yourself with the&nbsp;most interesting projects I&nbsp;have carried out.</p>
@@ -83,9 +83,9 @@
         <div class="carousel-cell">
           <div class="project">
             <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category">Landing page</p>
-              <h3 class="headings__title">Avax</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
+              <p class="headings__category wow fadeInDownBig">Landing page</p>
+              <h3 class="headings__title wow fadeInDown">Avax</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
                   <span class="button__text">Project details</span>
                   <i class="button__icon fas fa-long-arrow-alt-right"></i>
               </a>
@@ -131,9 +131,9 @@
         <div class="carousel-cell">
           <div class="project">
             <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category">Game</p>
-              <h3 class="headings__title">Sudoku</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
+              <p class="headings__category wow fadeInDownBig">Game</p>
+              <h3 class="headings__title wow fadeInDown">Sudoku</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
                   <span class="button__text">Project details</span>
                   <i class=" button__icon fas fa-long-arrow-alt-right"></i>
               </a>
@@ -179,9 +179,9 @@
         <div class="carousel-cell">
           <div class="project">
             <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category">Isomorphic App</p>
-              <h3 class="headings__title">Kanban</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
+              <p class="headings__category wow fadeInDownBig">Isomorphic App</p>
+              <h3 class="headings__title wow fadeInDown">Kanban</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
                   <span class="button__text">Project details</span>
                   <i class=" button__icon fas fa-long-arrow-alt-right"></i>
               </a>
@@ -225,9 +225,9 @@
         <div class="carousel-cell">
           <div class="project">
             <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category">Single Page App</p>
-              <h3 class="headings__title">Country App</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button" role="button">
+              <p class="headings__category wow fadeInDownBig">Single Page App</p>
+              <h3 class="headings__title wow fadeInDown">Country App</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
                   <span class="button__text">Project details</span>
                   <i class=" button__icon fas fa-long-arrow-alt-right"></i>
               </a>
@@ -274,10 +274,10 @@
   </section>
   <footer id ="contact" class="footer contact">
     <div class="container flex-col">
-      <h2 class="footer__title">Contact me</h2>
+      <h2 class="footer__title wow fadeInDown">Contact me</h2>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 outer">
-          <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form">
+          <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form wow blurIn">
             <div class="row row--full-width contact-form__inner">
                 <div class="col-lg-6 col-sm-12 contact-form__group">
                   <input id="input-name" type="text" name="name" class="contact-form__input" required>
@@ -303,7 +303,7 @@
           </form>
         </div>
       </div>
-      <div class="footer__bar flex-center flex-row">
+      <div class="footer__bar flex-center flex-row" wow-data-offset="1s">
         <p class="footer__copy">Mariusz Szlachta <span class="footer__copy--highlighted">&copy;</span></p>
         <ul class="social-media">
           <li class="social-media__item">
@@ -325,7 +325,7 @@
     <p class="modal__text">Hi user of the Internet Explorer. To fully enjoy using this website please consider download more secure browser.</p>
     <div class="modal__link-container">
       <a href="https://www.google.com/intl/pl_ALL/chrome/" target="_blank" rel="noopener" rel="noopener" class="modal__link">Chrome</a>
-      <a href="https://www.mozilla.org/pl/firefox/new/" target="_blank" class="modal__link">Firefox</a>
+      <a href="https://www.mozilla.org/pl/firefox/new/" target="_blank" rel="noopener" class="modal__link">Firefox</a>
       <a href="https://www.opera.com/pl/download" target="_blank" rel="noopener" class="modal__link">Opera</a>
     </div>
     <button class="modal__close">close</button>
@@ -341,5 +341,14 @@
     speed: 1900
     });
   </script>
+  <script>
+  // Animations fire
+// on reveal
+new WOW().init();
+// on slide change
+flkty.on('dragEnd', function(){
+  new WOW().init();
+});
+</script>
 </body>
 </html>
