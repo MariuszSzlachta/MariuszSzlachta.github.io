@@ -124,7 +124,7 @@ for (var l = 0; l < showPreviewBtns.length; l++) {
   _loop2(l);
 }
 
-// modal and FF flickity size fix
+// modal
 var modal = document.querySelector('.modal');
 var modalClose = document.querySelector('.modal__close');
 document.addEventListener("DOMContentLoaded", function (event) {

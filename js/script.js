@@ -111,7 +111,7 @@ for (let l = 0; l < showPreviewBtns.length; l++) {
   });
 }
 
-// modal and FF flickity size fix
+// modal
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 document.addEventListener("DOMContentLoaded", function(event) {
