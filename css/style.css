@@ -959,6 +959,19 @@ body {
   }
 }
 
+.moveIn {
+  animation: moveIn 0.7s forwards ease-in-out;
+}
+
+@keyframes moveIn {
+  from {
+    transform: translate3d(0, 100px, 0) scale(0.9);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 .fadeIn {
   animation: fadeIn 0.7s forwards ease-in-out;
 }
@@ -966,9 +979,6 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 

@@ -21,6 +21,14 @@
       </button>
       <ul class="navbar wow fadeInDown">
         <li class="navbar__item">
+          <a href="#intro" class="navbar__link link">
+            <svg class="link__svg">
+              <rect width="100%" height="100%" class="link__rect"></rect>
+            </svg>
+            <span class="link__text">Intro</span>
+          </a>
+        </li>
+        <li class="navbar__item">
           <a href="#about-me" class="navbar__link link">
             <svg class="link__svg">
               <rect width="100%" height="100%" class="link__rect"></rect>
@@ -55,15 +63,15 @@
       </ul>
     </div>
   </nav>
-  <header class="jumbotron">
-    <h1 class="jumbotron__title">Mariusz Szlachta
-      <span class="jumbotron__subtitle">Junior Web Developer</span>
+  <header id="intro" class="jumbotron">
+    <h1 class="jumbotron__title wow moveIn">Mariusz Szlachta
+      <span class="jumbotron__subtitle wow moveIn">Junior Web Developer</span>
     </h1>
-    <span class="clip">Web<br>Developer</span>
+    <span class="clip wow fadeIn">Web<br>Developer</span>
   </header>
   <article id="about-me" class="article about-me">
     <div class="container flex-col">
-      <h2 class="article__title">About me</h2>
+      <h2 class="article__title wow moveIn">About me</h2>
       <div class="row">
         <div class="col-lg-4 col-sm-12">
           <img src="" alt="My foto" class="article__image">
@@ -286,7 +294,7 @@
       <h2 class="footer__title wow moveIn">Contact me</h2>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 outer">
-          <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form wow moveIn" data-wow-delay="0.2s">
+          <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form wow moveIn">
             <div class="row row--full-width contact-form__inner">
                 <div class="col-lg-6 col-sm-12 contact-form__group">
                   <input id="input-name" type="text" name="name" class="contact-form__input" required>
