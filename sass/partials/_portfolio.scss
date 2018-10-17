@@ -7,7 +7,8 @@
 // ustawić stałą wysokość tak by pasowało ale dostosowac ją w zależności od media queries by ładnie wyglądało
 }
 .flickity-viewport {
-  padding-bottom: 2rem;
+  transition: height 0.3s;
+  padding-bottom: 4rem;
   box-sizing: content-box;
 }
 .flickity-page-dots {
@@ -59,9 +60,6 @@
 }
 
 @media (max-width: 768px) {
-  .flickity-viewport {
-    margin-bottom: 2rem;
-  }
   .flickity-page-dots {
     left: 50%;
     transform: translateX(-50%);

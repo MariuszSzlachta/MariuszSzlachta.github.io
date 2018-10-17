@@ -7,7 +7,7 @@
   <meta name="description" content="Mariusz Szlachta - portfolio website">
   <meta name="keywords" content="HTML, CSS, JavaScript, js, front-end developer, web developer, web-developer, backend-developer, fullstack web developer, react developer, portfolio">
   <meta name="author" content="Mariusz Szlachta">
-  <link href="https://fonts.googleapis.com/css?family=Marck+Script|Open+Sans:400,600|Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="public/vendor.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -27,7 +27,7 @@
       </button>
       <ul class="navbar wow fadeInDown">
         <li class="navbar__item">
-          <a href="#intro" class="navbar__link link">
+          <a href="#intro" class="navbar__link link scroll">
             <svg class="link__svg">
               <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="navbar__item">
-          <a href="#about-me" class="navbar__link link">
+          <a href="#about-me" class="navbar__link link scroll">
             <svg class="link__svg">
               <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
@@ -43,7 +43,7 @@
           </a>
         </li>
         <li class="navbar__item">
-          <a href="#portfolio" class="navbar__link link">
+          <a href="#portfolio" class="navbar__link link scroll">
             <svg class="link__svg">
               <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
@@ -59,7 +59,7 @@
           </a>
         </li>
         <li class="navbar__item">
-          <a href="#contact" class="navbar__link link">
+          <a href="#contact" class="navbar__link link scroll">
             <svg class="link__svg">
               <rect width="100%" height="100%" class="link__rect"></rect>
             </svg>
@@ -119,7 +119,7 @@
               <!-- details początek -->
               <div data-content="details" class="project__details details col-lg-12">
                 <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text">
+                  <div class="col-lg-6 col-md-12 details__text-column">
                     <!-- treść -->
                     <h3 class="details__title">Avax</h3>
                     <p class="details__category">Landing page | August 2018</p>
@@ -358,13 +358,6 @@
 
   <script src="public/vendor.bundle.min.js"></script>
   <script src="public/script.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-  <script>
-    const scroll = new SmoothScroll('a[href*="#"]', {
-    easing: 'easeOutQuint',
-    speed: 1900
-    });
-  </script>
   <script>
     // Animations fire
     // on reveal

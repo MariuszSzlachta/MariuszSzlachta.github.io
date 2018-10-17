@@ -97,6 +97,8 @@
   }
 }
 
+// Details animations
+// Animations for preview in details section
 [data-details-animation="1"] {
   background: transparent url('../images/avax/avax-ent-full.png') no-repeat;
   background-size: cover;
@@ -151,7 +153,7 @@
     background-position: 0 0;
   }
 }
-
+// Animation for WOW
 .moveIn {
   animation: moveIn 0.7s forwards ease-in-out;
 }
@@ -260,7 +262,7 @@
   }
   &__text {
     position: absolute;
-    font-family: $jumbo-font;
+    font-family: $secondary-font;
     font-size: 5rem;
     text-transform: uppercase;
     color: $light-text;
