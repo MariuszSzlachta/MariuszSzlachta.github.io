@@ -360,25 +360,20 @@
   <script src="public/vendor.bundle.min.js"></script>
   <script src="public/script.bundle.min.js"></script>
   <script>
-    // Animations fire
-    // on reveal
-    new WOW({mobile: false}).init();
-    // on slide change
+    const preloader = document.getElementById('preloader');
+    const preloaderRect = document.querySelector('.preloader__rect');
+
+    window.addEventListener('load', function(){
+      preloader.classList.remove('preloader--active');
+      preloaderRect.classList.remove('preload');
+      new WOW({mobile: false}).init();
+      setTimeout(function(){
+        preloader.style.display = 'none';
+      },1000)
+    });
     flkty.on('change', function(){
       new WOW({mobile: false}).init();
     });
-</script>
-<script>
-// preloader
-  const preloader = document.getElementById('preloader');
-  const preloaderRect = document.querySelector('.preloader__rect');
-  window.addEventListener('load', function(){
-    preloader.classList.remove('preloader--active');
-    preloaderRect.classList.remove('preload');
-    setTimeout(function(){
-      preloader.style.display = 'none';
-    },1000)
-  });
 </script>
 </body>
 </html>
