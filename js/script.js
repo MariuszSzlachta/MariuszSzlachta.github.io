@@ -123,3 +123,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 modalClose.addEventListener('click', function(){
   modal.classList.remove('modal--opened');
 });
+
+// preloader
+const preloader = document.getElementById('preloader');
+const preloaderRect = document.querySelector('.preloader__rect');
+
+document.addEventListener('load', function(){
+  preloader.classList.remove('preloader--active');
+  preloaderRect.classList.remove('preload');
+  setTimeout(function(){
+    preloader.style.display = 'none';
+  },1000)
+});

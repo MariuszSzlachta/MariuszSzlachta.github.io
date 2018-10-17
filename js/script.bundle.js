@@ -87,6 +87,7 @@ var showPreviewBtns = document.querySelectorAll('[data-get="preview"]');
 var previews = document.querySelectorAll('[data-content="preview"]');
 var headings = document.querySelectorAll('[data-content="headings"]');
 var details = document.querySelectorAll('[data-content="details"]');
+var detailsActive = document.getElementsByClassName('details--active');
 
 window.addEventListener('load', function () {
   flkty.resize();
@@ -136,10 +137,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 modalClose.addEventListener('click', function () {
   modal.classList.remove('modal--opened');
 });
-// Animations fire
-// on reveal
-new WOW().init();
-// on slide change
-flkty.on('settle', function(){
-  new WOW().init();
+
+// preloader
+var preloader = document.getElementById('preloader');
+var preloaderRect = document.querySelector('.preloader__rect');
+
+document.addEventListener('load', function () {
+  preloader.classList.remove('preloader--active');
+  preloaderRect.classList.remove('preload');
+  setTimeout(function () {
+    preloader.style.display = 'none';
+  }, 1000);
 });
