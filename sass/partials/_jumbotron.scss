@@ -7,10 +7,9 @@
   background: $black url('../images/jumbotron/jumbo-2k.jpg') no-repeat;
   background-position: center top;
   background-size: cover;
-
   &__title {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     margin: 0;
     font-family: $secondary-font;
     font-size: 6rem;
@@ -18,8 +17,9 @@
     line-height: 1.3;
     text-shadow: 2px 2px 3px black;
   }
-
   &__subtitle {
+    position: relative;
+    z-index: 1;
     display: block;
     font-size: 4.6rem;
     color: $primary-color;
