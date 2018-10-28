@@ -1625,6 +1625,14 @@ textarea:required {
   color: #F7AC54;
 }
 
+.article__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid #F7AC54;
+}
+
 @media (max-width: 480px) {
   .article {
     padding: 4rem 12px;
