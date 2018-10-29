@@ -783,6 +783,14 @@ body {
   }
 }
 
+@media (max-width: 340px) {
+  .section__title,
+  .article__title,
+  .footer__title {
+    font-size: 3.2rem;
+  }
+}
+
 .link:hover .link__rect {
   stroke: #FFFFFF;
   animation-name: rect-animation;
