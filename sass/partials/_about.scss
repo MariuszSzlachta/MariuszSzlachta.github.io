@@ -27,6 +27,16 @@
     object-fit: cover;
     border: 6px solid $primary-color;
   }
+  &__link {
+    border-bottom: 1px solid $pera-text;
+    text-decoration: none;
+    color: $primary-color;
+    transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out;
+    &:hover {
+      color: $light-text;
+      border-bottom-color: $hover-color;
+    }
+  }
 }
 
 @media (max-width: 480px) {
