@@ -124,6 +124,11 @@
   background-size: cover;
   background-position: 0 0;
 }
+[data-details-animation="6"] {
+  background: transparent url('../images/books/books-smart-l.png') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
 
 // details__animation
 .details__animation {
@@ -132,14 +137,17 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+.details__animation--fast {
+  animation-duration: 10s;
+}
 .details__animation--normal {
   animation-duration: 20s;
 }
 .details__animation--slow {
   animation-duration: 40s;
 }
-.details__animation--fast {
-  animation-duration: 10s;
+.details__animation--very-slow {
+  animation-duration: 60s;
 }
 @keyframes scroll {
   0% {

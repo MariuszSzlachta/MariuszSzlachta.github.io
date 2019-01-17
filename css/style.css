@@ -923,11 +923,21 @@ body {
   background-position: 0 0;
 }
 
+[data-details-animation="6"] {
+  background: transparent url("../images/books/books-smart-l.png") no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
 .details__animation {
   animation-name: scroll;
   animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.details__animation--fast {
+  animation-duration: 10s;
 }
 
 .details__animation--normal {
@@ -938,8 +948,8 @@ body {
   animation-duration: 40s;
 }
 
-.details__animation--fast {
-  animation-duration: 10s;
+.details__animation--very-slow {
+  animation-duration: 60s;
 }
 
 @keyframes scroll {

@@ -308,9 +308,9 @@
             <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
               <picture class="preview__picture">
                 <source media="(min-width: 768px)" srcset="images/intranet/intranet-ipad.png">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/intranet/intranet-smart-l.png">
+                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/intranet/intranet-preview-smart-l.png">
                 <source media="(min-width: 320px)" srcset="images/intranet/intranet-preview-smart-p.png">
-                <img class="preview__image" src="images/intranet/intranet-full.png" alt="country app miniature">
+                <img class="preview__image" src="images/intranet/intranet-full.png" alt="Intranet app miniature">
               </picture>
             </div>
             <!-- preview koniec -->
@@ -331,6 +331,57 @@
                     </footer>
                   </div>
                   <div data-details-animation="5" class="col-lg-6 col-md-12 details__animation details__animation--slow">
+                  </div>
+                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                    <span class="button__text">Project preview</span>
+                  </a>
+                </div>
+              </div>
+            </div><!--flex fix-->
+            <!-- details koniec -->
+          </div>
+        </div>
+        <!-- end of cell three -->
+        <!-- Books -->
+        <div class="carousel-cell">
+          <div class="project">
+            <div data-content="headings" class="project__headings headings headings--active">
+              <p class="headings__category wow fadeInDownBig">SINGLE PAGE APP with DnD</p>
+              <h3 class="headings__title wow fadeInDown">Books</h3>
+              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                  <span class="button__text">Project details</span>
+                  <i class=" button__icon fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+            <!-- preview początek -->
+            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+              <picture class="preview__picture">
+                <source media="(min-width: 768px)" srcset="images/books/books-preview-ipad.png">
+                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/books/books-preview-ipad.png">
+                <source media="(min-width: 320px)" srcset="images/books/books-preview-smart-p.png">
+                <img class="preview__image" src="images/books/books-preview-ipad.png" alt="Books app miniature">
+              </picture>
+            </div>
+            <!-- preview koniec -->
+            <!-- details początek -->
+            <div class="ieFlexFix">
+              <div data-content="details" class="project__details details col-lg-12">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 details__text">
+                    <!-- treść -->
+                    <h3 class="details__title">Books</h3>
+                    <p class="details__category">Single Page App | December 2018</p>
+                    <p class="details__text">Book app is an&nbsp;interesting concept of&nbsp;presentation data from external API, but it&nbsp;is&nbsp;also a&nbsp;challenge with implementation drag and drop mechanism without using HTML5 DnD API or any other JavaScript plugins.</p>
+                    <p class="details__text">This project has helped me to&nbsp;be creative and&nbsp;it has encouraged me to&nbsp;get more knowledge about javascript. During the creation of this app, I&nbsp;was able to apply MVP (Minimum Valuable Product) pattern. To do so I&nbsp;have decided to start from scratch, so I&nbsp;have prepared tools and data. Then I&nbsp;got the idea about dnd and fortunately, it worked. My next steps were a&nbsp;migration of state of the app to redux and get data from external free API, because at the beginning I&nbsp;have been using a json file with dummy data. My last steps were styling the app in a&nbsp;fancy way, add PWA mechanism and deploy the app on&nbsp;GitHub pages. Since my drag and drop algorithm has been finished the app became MVP.
+                    </p>
+                    <p class="details__text">This project wasn't that hard to&nbsp;implement but pushed me to&nbsp;think more about common and&nbsp;repeating actions in&nbsp;JavaScript. And also it allowed me to combine regular event listeners with their equivalents in&nbsp;React. It was a&nbsp;good fun for me, so I&nbsp;encourage you to try your luck with this stuff.</p>
+                    <footer class="details__footer">
+                      <a href="https://github.com/MariuszSzlachta/books" rel="noopener" target="_blank" class="details__link">view code</a>
+                      <a href="https://mariuszszlachta.github.io/books/" target="_blank" rel="noopener" class="details__link">go live</a>
+                    </footer>
+                  </div>
+                  <div data-details-animation="6" class="col-lg-6 col-md-12 details__animation details__animation--very-slow">
                   </div>
                   <a href="javascript:;" data-get="preview" class="details__button button" role="button">
                     <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
