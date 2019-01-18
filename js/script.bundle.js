@@ -52,7 +52,8 @@ var flkty = new Flickity(element, {
   pageDots: true,
   autoPlay: false,
   adaptiveHeight: true,
-  prevNextButtons: true
+  prevNextButtons: true,
+  wrapAround: true
 });
 
 // contact-form value checker for toggle styles
