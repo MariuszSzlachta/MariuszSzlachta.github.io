@@ -4,9 +4,7 @@
 
 .article {
   &__content {
-    margin-top: 0;
-    margin-bottom: 0.7rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2;
     text-indent: 3.5rem;
     color: $pera-text;
@@ -37,6 +35,10 @@
       border-bottom-color: $hover-color;
     }
   }
+}
+
+.article-list {;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 480px) {

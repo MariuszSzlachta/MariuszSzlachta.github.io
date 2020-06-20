@@ -1,480 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Mariusz Szlachta - portfolio website">
-  <meta name="keywords" content="Mariusz Szlachta, Mariusz Szlachta front-end developer, HTML, CSS, JavaScript, js, front-end developer, web developer, web-developer, backend-developer, fullstack web developer, react developer, portfolio">
-  <meta name="author" content="Mariusz Szlachta">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="public/vendor.min.css">
-  <link rel="stylesheet" href="public/style.min.css">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <title>Mariusz Szlachta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mariusz Szlachta - portfolio website">
+    <meta name="keywords"
+          content="Mariusz Szlachta, Mariusz Szlachta front-end developer, HTML, CSS, JavaScript, js, front-end developer, web developer, web-developer, backend-developer, fullstack web developer, react developer, portfolio">
+    <meta name="author" content="Mariusz Szlachta">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/vendor.min.css">
+    <link rel="stylesheet" href="public/style.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <title>Mariusz Szlachta</title>
 </head>
 <body>
-  <div id="preloader" class="preloader preloader--active">
+<div id="preloader" class="preloader preloader--active">
     <svg class="preloader__svg">
         <rect width="100%" height="100%" class="preloader__rect preload"></rect>
-      </svg>
-      <span class="preloader__text">LOADING</span>
-  </div>
-  <nav class="nav">
+    </svg>
+    <span class="preloader__text">LOADING</span>
+</div>
+<nav class="nav">
     <div class="container">
-      <button class="hamburger" aria-label="menu toggler">
-        <span class="hamburger__bar"></span>
-      </button>
-      <ul class="navbar wow fadeInDown">
-        <li class="navbar__item">
-          <a href="#intro" class="navbar__link link scroll">
-            <svg class="link__svg">
-              <rect width="100%" height="100%" class="link__rect"></rect>
-            </svg>
-            <span class="link__text">Intro</span>
-          </a>
-        </li>
-        <li class="navbar__item">
-          <a href="#about-me" class="navbar__link link scroll">
-            <svg class="link__svg">
-              <rect width="100%" height="100%" class="link__rect"></rect>
-            </svg>
-            <span class="link__text">About me</span>
-          </a>
-        </li>
-        <li class="navbar__item">
-          <a href="#portfolio" class="navbar__link link scroll">
-            <svg class="link__svg">
-              <rect width="100%" height="100%" class="link__rect"></rect>
-            </svg>
-            <span class="link__text">Projects</span>
-          </a>
-        </li>
-        <li class="navbar__item">
-          <a href="https://drive.google.com/file/d/1FH3uO82YB1SyJaUVvg8Wtf150IcRDWfW/view?usp=sharing" download target="_blank" rel="noopener" class="navbar__link link">
-            <svg class="link__svg">
-              <rect width="100%" height="100%" class="link__rect"></rect>
-            </svg>
-            <span class="link__text">Curriculum Vitae</span>
-          </a>
-        </li>
-        <li class="navbar__item">
-          <a href="#contact" class="navbar__link link scroll">
-            <svg class="link__svg">
-              <rect width="100%" height="100%" class="link__rect"></rect>
-            </svg>
-            <span class="link__text">Contact</span>
-          </a>
-        </li>
-      </ul>
+        <button class="hamburger" aria-label="menu toggler">
+            <span class="hamburger__bar"></span>
+        </button>
+        <ul class="navbar wow fadeInDown">
+            <li class="navbar__item">
+                <a href="#intro" class="navbar__link link scroll">
+                    <svg class="link__svg">
+                        <rect width="100%" height="100%" class="link__rect"></rect>
+                    </svg>
+                    <span class="link__text">Intro</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#about-me" class="navbar__link link scroll">
+                    <svg class="link__svg">
+                        <rect width="100%" height="100%" class="link__rect"></rect>
+                    </svg>
+                    <span class="link__text">About me</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#portfolio" class="navbar__link link scroll">
+                    <svg class="link__svg">
+                        <rect width="100%" height="100%" class="link__rect"></rect>
+                    </svg>
+                    <span class="link__text">Projects</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="https://drive.google.com/file/d/1FH3uO82YB1SyJaUVvg8Wtf150IcRDWfW/view?usp=sharing" download target="_blank" rel="noopener"
+                   class="navbar__link link">
+                    <svg class="link__svg">
+                        <rect width="100%" height="100%" class="link__rect"></rect>
+                    </svg>
+                    <span class="link__text">Curriculum Vitae</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact" class="navbar__link link scroll">
+                    <svg class="link__svg">
+                        <rect width="100%" height="100%" class="link__rect"></rect>
+                    </svg>
+                    <span class="link__text">Contact</span>
+                </a>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <header id="intro" class="jumbotron">
+</nav>
+<header id="intro" class="jumbotron">
     <h1 class="jumbotron__title wow moveIn">Mariusz Szlachta
-      <span class="jumbotron__subtitle wow moveIn">Junior Web Developer</span>
+        <span class="jumbotron__subtitle wow moveIn">Web Developer</span>
     </h1>
     <span class="clip wow fadeIn">Web<br>Developer</span>
-  </header>
-  <article id="about-me" class="article about-me">
+</header>
+<article id="about-me" class="article about-me">
     <div class="container flex-col">
-      <h2 class="article__title wow moveIn">About me</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="images/about/foto.jpg" alt="My foto" class="article__image">
+        <h2 class="article__title wow moveIn">About me</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="images/about/foto.jpg" alt="My foto" class="article__image">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12 wow moveIn">
+                <p class="article__content">My name is Mariusz. I'm an ambitious web developer for whom programming is a passion. I started my adventure with a
+                    programing about three years ago and I continuously develop my skills.
+                </p>
+                <p class="article__content">I'm a graduate of the Web Developer bootcamp organized by Kodilla, during which I built a solid foundation in the
+                    area of web apps development based on the most popular JavaScript technologies.
+                </p>
+                <p class="article__content">
+                    The first commercial experience I acquired working as a Junior JavaScript developer in <u>Asseco Business Solutions.</u> That job spread my
+                    horizons, taught best practices, design patterns, and made me a conscious programmer.
+                    Working there I was responsible for two projects.</p>
+                <ul class="article__list article-list">
+                    <li class="article-list__element">
+                        <b>Connector portal</b> - I was responsible to create new functionalities like powerful data grids to present thousand of records and
+                        rewrite
+                        old functionalities in a modern way using React,
+                        Kendo UI, JSP, Redux, and many more.
+                    </li>
+                    <li class="article-list__element">
+                        <b>Direct Portal</b> - a startup-like project made from scratch in React as Single Page Application. I was able to introduce solutions
+                        in the area of styling, Webpack and I was an author a half of the front-end part of the application. In that project, I learned to React
+                        in deep.
+                    </li>
+                </ul>
+                <p class="article__content">Currently, I live in Gliwice where I am a front-end developer at <u>Skygate.</u> I develop my programming skills
+                    working on
+                    the project for the biggest pharmaceutical company in Europe. The application presents large amounts of data in the form of charts. I am
+                    also
+                    the main architect of technical requirements for candidates and I am involved in every technical part of the recruitment process. Because of
+                    my experience and willingness to help I am frequently asked for help in other projects. Because of my ability to share a knowledge I conduct
+                    internal training.</p>
+                <p class="article__content">In my free time, I learn new technologies like Java, I explore the JavaScript ecosystem and follow the current
+                    trends.
+                    In the future, I want to be a tech-lead with a wide range of tools that will help to change the world around me. To do so I try to surround
+                    myself with inspiring and full of passionate people I could learn from.</p>
+            </div>
         </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 wow moveIn">
-          <p class="article__content">My name is Mariusz. I'm an ambitious web developer with a creative approach for solving problems and&nbsp;a&nbsp;huge dose of&nbsp;sense of&nbsp;humor. Creating applications and websites gives me great satisfaction. I&nbsp;love the feeling when complex parts of code become clear and problems, previously impossible to solve, become easy to overcome.</p>
-          <p class="article__content">I'm a&nbsp;graduate of the Web Developer bootcamp organized by Kodilla, during which I&nbsp;built a&nbsp;solid foundation in the area of web apps development based on the most popular JavaScript technologies. In&nbsp;my projects, I'm eager to use solutions offered by ReactJS combined with the most popular libraries like React-Router, Formik, Redux, etc. To style my apps I&nbsp;often choose SCSS. Task automation using npm and building applications using Webpack is almost an&nbsp;indispensable standard in my work. I'm familiar also with backend technologies such as MongoDB with Mongoose, Node.js, and Express. However, I'm&nbsp;rather focused on front-end stuff right now, because of the spec of my work.</p>
-          <p class="article__content">Currently, I'm&nbsp;saving the world working as a&nbsp;Junior Software Developer. I'm&nbsp;constantly developing my skills solving advanced problems, by&nbsp;finding optimal solutions for them and learning advanced design patterns and best practices. In my free time, I&nbsp;learn new technologies like Java, I&nbsp;explore the JavaScript ecosystem and follow the current trends.</p>
-          <p class="article__content">In the future, I&nbsp;want to be a&nbsp;conscious programmer with a&nbsp;wide range of tools that will help to&nbsp;change the world around me. To do so I&nbsp;try to surround myself with inspiring and full of passionate people I&nbsp;could learn from.</p>
-        </div>
-      </div>
     </div>
-  </article>
-  <section id="portfolio" class="portfolio section">
+</article>
+<section id="portfolio" class="portfolio section">
     <div class="container flex-col">
-      <h2 class="section__title wow moveIn">Projects</h2>
-      <div class="portfolio__carousel carousel">
-        <!-- cell one  AVAX-->
-        <div class="carousel-cell">
-          <div class="project">
-            <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category wow fadeInDownBig">Landing page</p>
-              <h3 class="headings__title wow fadeInDown">Avax</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
-                  <span class="button__text">Project details</span>
-                  <i class="button__icon fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-            <!-- preview początek -->
-            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
-              <picture class="preview__picture">
-                <source media="(min-width: 768px)" srcset="images/avax/avax-preview-ipad.jpg">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
-                <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
-                <img class="preview__image" src="images/avax/avax-preview-ipad.jpg" alt="avax project miniature">
-              </picture>
-            </div>
-            <!-- preview koniec -->
-            <div class="ieFlexFix">
-              <!-- details początek -->
-              <div data-content="details" class="project__details details col-lg-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text-column">
-                    <!-- treść -->
-                    <h3 class="details__title">Avax</h3>
-                    <p class="details__category">Landing page | August 2018</p>
-                    <p class="details__text">I have created this cool landing page from *.psd file. This was a&nbsp;very instructive project for&nbsp;me.</p>
-                    <p class="details__text">Many sections of this project pushed me to&nbsp;find the&nbsp;best solution. Instead of&nbsp;using regular css I've decided to&nbsp;use scss and its advantages, for example: splitting components and&nbsp;sections into multiple files, variables, and&nbsp;nestings. Avax uses a&nbsp;custom themes for google maps setted with use of&nbsp;its&nbsp;API. This approach allows to&nbsp;enjoy maximum performance as well as control of&nbsp;visual appearance. Lighweight free carousel Flickity is one of&nbsp;my favorite. Despite its small weight it&nbsp;provides many useful features and&nbsp;it can be controlled using vanilla js which was my&nbsp;goal, because I&nbsp;didn’t want to use JQuery. I&nbsp;need to mention something about my script for filtering projects. I'm very proud of&nbsp;it because I&nbsp;was able to&nbsp;combine 'data-set' and&nbsp;JavaScript to&nbsp;make it work.</p>
-                    <p class="details__text">It's not possible to&nbsp;write everything just in&nbsp;several sentences. That is why I&nbsp;encourage you to get familiar with the source code and see how it works online by&nbsp;clicking proper buttons down below.</p>
-                    <footer class="details__footer">
-                      <a href="https://github.com/MariuszSzlachta/AVAX" target="_blank" rel="noopener" class="details__link">view code</a>
-                      <a href="https://mariuszszlachta.github.io/AVAX/" target="_blank" rel="noopener" class="details__link">go live</a>
-                    </footer>
-                  </div>
-                  <div data-details-animation="1" class="col-lg-6 col-md-12 details__animation">
-                    <!-- foto -->
-                  </div>
-                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
-                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
-                    <span class="button__text">Project preview</span>
-                  </a>
+        <h2 class="section__title wow moveIn">Projects</h2>
+        <div class="portfolio__carousel carousel">
+            <!-- cell one  AVAX-->
+            <div class="carousel-cell">
+                <div class="project">
+                    <div data-content="headings" class="project__headings headings headings--active">
+                        <p class="headings__category wow fadeInDownBig">Landing page</p>
+                        <h3 class="headings__title wow fadeInDown">Avax</h3>
+                        <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                            <span class="button__text">Project details</span>
+                            <i class="button__icon fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <!-- preview początek -->
+                    <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+                        <picture class="preview__picture">
+                            <source media="(min-width: 768px)" srcset="images/avax/avax-preview-ipad.jpg">
+                            <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/avax/avax-preview-smart-l.jpg">
+                            <source media="(min-width: 320px)" srcset="images/avax/avax-preview-smart-p.jpg">
+                            <img class="preview__image" src="images/avax/avax-preview-ipad.jpg" alt="avax project miniature">
+                        </picture>
+                    </div>
+                    <!-- preview koniec -->
+                    <div class="ieFlexFix">
+                        <!-- details początek -->
+                        <div data-content="details" class="project__details details col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 details__text-column">
+                                    <!-- treść -->
+                                    <h3 class="details__title">Avax</h3>
+                                    <p class="details__category">Landing page | August 2018</p>
+                                    <p class="details__text">I have created this cool landing page from *.psd file. This was a&nbsp;very instructive project for&nbsp;me.</p>
+                                    <p class="details__text">Many sections of this project pushed me to&nbsp;find the&nbsp;best solution. Instead of&nbsp;using
+                                        regular css I've decided to&nbsp;use scss and its advantages, for example: splitting components and&nbsp;sections into
+                                        multiple files, variables, and&nbsp;nestings. Avax uses a&nbsp;custom themes for google maps setted with use of&nbsp;its&nbsp;API.
+                                        This approach allows to&nbsp;enjoy maximum performance as well as control of&nbsp;visual appearance. Lighweight free
+                                        carousel Flickity is one of&nbsp;my favorite. Despite its small weight it&nbsp;provides many useful features and&nbsp;it
+                                        can be controlled using vanilla js which was my&nbsp;goal, because I&nbsp;didn’t want to use JQuery. I&nbsp;need to
+                                        mention something about my script for filtering projects. I'm very proud of&nbsp;it because I&nbsp;was able to&nbsp;combine
+                                        'data-set' and&nbsp;JavaScript to&nbsp;make it work.</p>
+                                    <p class="details__text">It's not possible to&nbsp;write everything just in&nbsp;several sentences. That is why I&nbsp;encourage
+                                        you to get familiar with the source code and see how it works online by&nbsp;clicking proper buttons down below.</p>
+                                    <footer class="details__footer">
+                                        <a href="https://github.com/MariuszSzlachta/AVAX" target="_blank" rel="noopener" class="details__link">view code</a>
+                                        <a href="https://mariuszszlachta.github.io/AVAX/" target="_blank" rel="noopener" class="details__link">go live</a>
+                                    </footer>
+                                </div>
+                                <div data-details-animation="1" class="col-lg-6 col-md-12 details__animation">
+                                    <!-- foto -->
+                                </div>
+                                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                                    <span class="button__text">Project preview</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- details koniec -->
+                    </div>
                 </div>
-              </div>
-              <!-- details koniec -->
             </div>
-          </div>
-        </div>
-        <!-- cell 2 SUDOKU -->
-        <div class="carousel-cell">
-          <div class="project">
-            <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category wow fadeInDownBig">Game</p>
-              <h3 class="headings__title wow fadeInDown">Sudoku</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
-                  <span class="button__text">Project details</span>
-                  <i class=" button__icon fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-            <!-- preview początek -->
-            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
-              <picture class="preview__picture">
-                <source media="(min-width: 768px)" srcset="images/sudoku-game/sudoku-ipad.png">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/sudoku-game/sudoku-smart-l.png">
-                <source media="(min-width: 320px)" srcset="images/sudoku-game/sudoku-smart-p.png">
-                <img class="preview__image" src="images/sudoku-game/sudoku-ipad.png" alt="sudoku project miniature">
-              </picture>
-            </div>
-            <!-- preview koniec -->
-            <div class="ieFlexFix">
-              <!-- details początek -->
-              <div data-content="details" class="project__details details col-lg-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text">
-                    <!-- treść -->
-                    <h3 class="details__title">Sudoku</h3>
-                    <p class="details__category">Game | July 2018</p>
-                    <p class="details__text">Here is my version of this common game.</p>
-                    <p class="details__text">This project was created during a&nbsp;Web Developer bootcamp. To make my game I&nbsp;used the free library „Sudoku-umd” that generates sudoku. To build front of&nbsp;my app I&nbsp;decided to&nbsp;use React, and its 'reactive' rendering was a&nbsp;great solution, because I&nbsp;wanted to&nbsp;rerender only that the field that changes. I&nbsp;decided to&nbsp;use Redux for state management, that made the state of&nbsp;the app more predictable and it was a&nbsp;great opportunity for practicing Redux with React. I tried to&nbsp;create a&nbsp;fully responsive game with functionalities that will allow you to&nbsp;choose the&nbsp;level of&nbsp;difficulty, show some hints and even solve the game for you. I&nbsp;hope you will enjoy it.</p>
-                    <p class="details__text">You can try sudoku for yourself by&nbsp;clicking 'go live' or&nbsp;watch my code and&nbsp;read the&nbsp;readme file by&nbsp;clicking the 'view code'.</p>
-                    <footer class="details__footer">
-                      <a href="https://github.com/MariuszSzlachta/sudoku" target="_blank" rel="noopener" class="details__link">view code</a>
-                      <a href="https://mariuszszlachta.github.io/sudoku/" target="_blank" rel="noopener" class="details__link">go live</a>
-                    </footer>
-                  </div>
-                  <div data-details-animation="2" class="col-lg-6 col-md-12 details__animation details__animation--fast">
-                  </div>
-                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
-                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
-                    <span class="button__text">Project preview</span>
-                  </a>
+            <!-- cell 2 SUDOKU -->
+            <div class="carousel-cell">
+                <div class="project">
+                    <div data-content="headings" class="project__headings headings headings--active">
+                        <p class="headings__category wow fadeInDownBig">Game</p>
+                        <h3 class="headings__title wow fadeInDown">Sudoku</h3>
+                        <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                            <span class="button__text">Project details</span>
+                            <i class=" button__icon fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <!-- preview początek -->
+                    <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+                        <picture class="preview__picture">
+                            <source media="(min-width: 768px)" srcset="images/sudoku-game/sudoku-ipad.png">
+                            <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/sudoku-game/sudoku-smart-l.png">
+                            <source media="(min-width: 320px)" srcset="images/sudoku-game/sudoku-smart-p.png">
+                            <img class="preview__image" src="images/sudoku-game/sudoku-ipad.png" alt="sudoku project miniature">
+                        </picture>
+                    </div>
+                    <!-- preview koniec -->
+                    <div class="ieFlexFix">
+                        <!-- details początek -->
+                        <div data-content="details" class="project__details details col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 details__text">
+                                    <!-- treść -->
+                                    <h3 class="details__title">Sudoku</h3>
+                                    <p class="details__category">Game | July 2018</p>
+                                    <p class="details__text">Here is my version of this common game.</p>
+                                    <p class="details__text">This project was created during a&nbsp;Web Developer bootcamp. To make my game I&nbsp;used the free
+                                        library „Sudoku-umd” that generates sudoku. To build front of&nbsp;my app I&nbsp;decided to&nbsp;use React, and its
+                                        'reactive' rendering was a&nbsp;great solution, because I&nbsp;wanted to&nbsp;rerender only that the field that changes.
+                                        I&nbsp;decided to&nbsp;use Redux for state management, that made the state of&nbsp;the app more predictable and it was a&nbsp;great
+                                        opportunity for practicing Redux with React. I tried to&nbsp;create a&nbsp;fully responsive game with functionalities
+                                        that will allow you to&nbsp;choose the&nbsp;level of&nbsp;difficulty, show some hints and even solve the game for you. I&nbsp;hope
+                                        you will enjoy it.</p>
+                                    <p class="details__text">You can try sudoku for yourself by&nbsp;clicking 'go live' or&nbsp;watch my code and&nbsp;read the&nbsp;readme
+                                        file by&nbsp;clicking the 'view code'.</p>
+                                    <footer class="details__footer">
+                                        <a href="https://github.com/MariuszSzlachta/sudoku" target="_blank" rel="noopener" class="details__link">view code</a>
+                                        <a href="https://mariuszszlachta.github.io/sudoku/" target="_blank" rel="noopener" class="details__link">go live</a>
+                                    </footer>
+                                </div>
+                                <div data-details-animation="2" class="col-lg-6 col-md-12 details__animation details__animation--fast">
+                                </div>
+                                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                                    <span class="button__text">Project preview</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- details koniec -->
+                    </div>
                 </div>
-              </div>
-              <!-- details koniec -->
             </div>
-          </div>
-        </div>
-        <!-- end of cell two -->
-        <!-- KANBAN -->
-        <div class="carousel-cell">
-          <div class="project">
-            <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category wow fadeInDownBig">Isomorphic App</p>
-              <h3 class="headings__title wow fadeInDown">Kanban</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
-                  <span class="button__text">Project details</span>
-                  <i class=" button__icon fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-            <!-- preview początek -->
-            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
-              <picture class="preview__picture">
-                <source media="(min-width: 768px)" srcset="images/kanban-app/kanban-ipad.png">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/kanban-app/kanban-smart-l.png">
-                <source media="(min-width: 320px)" srcset="images/kanban-app/kanban-smart-p.png">
-                <img class="preview__image" src="images/kanban-app/kanban-ipad.png" alt="kanban project miniature">
-              </picture>
-            </div>
-            <!-- preview koniec -->
-            <!-- details początek -->
-            <div class="ieFlexFix">
-              <div data-content="details" class="project__details details col-lg-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text">
-                    <!-- treść -->
-                    <h3 class="details__title">Kanban</h3>
-                    <p class="details__category">Isomorphic app | July 2018</p>
-                    <p class="details__text">This is the bigges project I've made so&nbsp;far. My app handles CRUD operations for columns and notes, as well as&nbsp;provides a&nbsp;'drag and drop' functionality for&nbsp;notes which is&nbsp;possible due to&nbsp;the&nbsp;react-html5-dnd library.</p>
-                    <p class="details__text">From a technical side, the application is&nbsp;as&nbsp;follows. On backend I've used Express.js to&nbsp;create a&nbsp;server. RESTful API is responsible for&nbsp;handling the&nbsp;CRUD operation on&nbsp;mongoDB database (hosted on MLab). Of&nbsp;course I’ve used a&nbsp;Mongoose to make a&nbsp;work with database more comfortable. To generate modules, components, models I've&nbsp;chosen a&nbsp;mern generator that uses EJS templates. A&nbsp;development environment is&nbsp;managed by&nbsp;Webpack and NPM scripts. On&nbsp;frontend views are generated by&nbsp;React while Redux manages a&nbsp;state of the app. Since it's an&nbsp;isomorphic application, its state is&nbsp;managed asynchronously by&nbsp;Redux-thunk. The whole project was based on&nbsp;the MERN-template.</p>
-                    <p class="details__text">The application has been placed on&nbsp;the&nbsp;Heroku website, therefore the&nbsp;first launch might take a&nbsp;while, because Heroku disables applications that are not currently in use.</p>
-                    <footer class="details__footer">
-                      <a href="https://github.com/MariuszSzlachta/KanbanApp" target="_blank" rel="noopener" class="details__link">view code</a>
-                      <a href="https://kanban--app.herokuapp.com/" target="_blank" rel="noopener" class="details__link">go live</a>
-                    </footer>
-                  </div>
-                  <div data-details-animation="3" class="col-lg-6 col-md-12 details__animation details__animation--normal">
-                  </div>
-                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
-                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
-                    <span class="button__text">Project preview</span>
-                  </a>
+            <!-- end of cell two -->
+            <!-- KANBAN -->
+            <div class="carousel-cell">
+                <div class="project">
+                    <div data-content="headings" class="project__headings headings headings--active">
+                        <p class="headings__category wow fadeInDownBig">Isomorphic App</p>
+                        <h3 class="headings__title wow fadeInDown">Kanban</h3>
+                        <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                            <span class="button__text">Project details</span>
+                            <i class=" button__icon fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <!-- preview początek -->
+                    <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+                        <picture class="preview__picture">
+                            <source media="(min-width: 768px)" srcset="images/kanban-app/kanban-ipad.png">
+                            <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/kanban-app/kanban-smart-l.png">
+                            <source media="(min-width: 320px)" srcset="images/kanban-app/kanban-smart-p.png">
+                            <img class="preview__image" src="images/kanban-app/kanban-ipad.png" alt="kanban project miniature">
+                        </picture>
+                    </div>
+                    <!-- preview koniec -->
+                    <!-- details początek -->
+                    <div class="ieFlexFix">
+                        <div data-content="details" class="project__details details col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 details__text">
+                                    <!-- treść -->
+                                    <h3 class="details__title">Kanban</h3>
+                                    <p class="details__category">Isomorphic app | July 2018</p>
+                                    <p class="details__text">This is the bigges project I've made so&nbsp;far. My app handles CRUD operations for columns and
+                                        notes, as well as&nbsp;provides a&nbsp;'drag and drop' functionality for&nbsp;notes which is&nbsp;possible due to&nbsp;the&nbsp;react-html5-dnd
+                                        library.</p>
+                                    <p class="details__text">From a technical side, the application is&nbsp;as&nbsp;follows. On backend I've used Express.js to&nbsp;create
+                                        a&nbsp;server. RESTful API is responsible for&nbsp;handling the&nbsp;CRUD operation on&nbsp;mongoDB database (hosted on
+                                        MLab). Of&nbsp;course I’ve used a&nbsp;Mongoose to make a&nbsp;work with database more comfortable. To generate modules,
+                                        components, models I've&nbsp;chosen a&nbsp;mern generator that uses EJS templates. A&nbsp;development environment is&nbsp;managed
+                                        by&nbsp;Webpack and NPM scripts. On&nbsp;frontend views are generated by&nbsp;React while Redux manages a&nbsp;state of
+                                        the app. Since it's an&nbsp;isomorphic application, its state is&nbsp;managed asynchronously by&nbsp;Redux-thunk. The
+                                        whole project was based on&nbsp;the MERN-template.</p>
+                                    <p class="details__text">The application has been placed on&nbsp;the&nbsp;Heroku website, therefore the&nbsp;first launch
+                                        might take a&nbsp;while, because Heroku disables applications that are not currently in use.</p>
+                                    <footer class="details__footer">
+                                        <a href="https://github.com/MariuszSzlachta/KanbanApp" target="_blank" rel="noopener" class="details__link">view
+                                            code</a>
+                                        <a href="https://kanban--app.herokuapp.com/" target="_blank" rel="noopener" class="details__link">go live</a>
+                                    </footer>
+                                </div>
+                                <div data-details-animation="3" class="col-lg-6 col-md-12 details__animation details__animation--normal">
+                                </div>
+                                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                                    <span class="button__text">Project preview</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <!-- Country -->
-        <div class="carousel-cell">
-          <div class="project">
-            <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category wow fadeInDownBig">Single Page App</p>
-              <h3 class="headings__title wow fadeInDown">Country App</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
-                  <span class="button__text">Project details</span>
-                  <i class=" button__icon fas fa-long-arrow-alt-right"></i>
-              </a>
-            </div>
-            <!-- preview początek -->
-            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
-              <picture class="preview__picture">
-                <source media="(min-width: 768px)" srcset="images/country/country-app-ipad.png">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/country/country-app-smart-l.jpg">
-                <source media="(min-width: 320px)" srcset="images/country/country-app-preview-smart-p.jpg">
-                <img class="preview__image" src="images/country/country-app-ipad.png" alt="country app miniature">
-              </picture>
-            </div>
-            <!-- preview koniec -->
-            <!-- details początek -->
-            <div class="ieFlexFix">
-              <div data-content="details" class="project__details details col-lg-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text">
-                    <!-- treść -->
-                    <h3 class="details__title">Country App</h3>
-                    <p class="details__category">Single Page App | Juni 2018</p>
-                    <p class="details__text">Country is a&nbsp;classic expample of&nbsp;Single Page Applications. It presents the&nbsp;basic information about the&nbsp;selected country in&nbsp;an&nbsp;interesting way.</p>
-                    <p class="details__text">The app was created with React and React Router libraries, and entire rendering lies with a&nbsp;client side. Information about countries are&nbsp;loaded from *.json file. A&nbsp;user can filter the list of&nbsp;countries depending on&nbsp;a&nbsp;chosen continent. Clicking the&nbsp;flag app enables viewing a&nbsp;proper component that presents detailed information about a&nbsp;chosen country. There are also buttons for&nbsp;removing a&nbsp;country from the list. By&nbsp;using the&nbsp;contact component, you can go to&nbsp;my portfolio or&nbsp;send me an&nbsp;e-mail. You can switch between main components using navbar on&nbsp;top.</p>
-                    <p class="details__text">The process of&nbsp;creation of&nbsp;this application has helped me to&nbsp;understand the philosophy of SPA, as&nbsp;well as&nbsp;to practice the most popular frontend JavaScript libraries.</p>
-                    <footer class="details__footer">
-                      <a href="https://github.com/MariuszSzlachta/country-app" rel="noopener" target="_blank" class="details__link">view code</a>
-                      <a href="https://mariuszszlachta.github.io/country-app/" target="_blank" rel="noopener" class="details__link">go live</a>
-                    </footer>
-                  </div>
-                  <div data-details-animation="4" class="col-lg-6 col-md-12 details__animation details__animation--slow">
-                  </div>
-                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
-                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
-                    <span class="button__text">Project preview</span>
-                  </a>
+            <!-- Country -->
+            <div class="carousel-cell">
+                <div class="project">
+                    <div data-content="headings" class="project__headings headings headings--active">
+                        <p class="headings__category wow fadeInDownBig">Single Page App</p>
+                        <h3 class="headings__title wow fadeInDown">Country App</h3>
+                        <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                            <span class="button__text">Project details</span>
+                            <i class=" button__icon fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <!-- preview początek -->
+                    <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+                        <picture class="preview__picture">
+                            <source media="(min-width: 768px)" srcset="images/country/country-app-ipad.png">
+                            <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/country/country-app-smart-l.jpg">
+                            <source media="(min-width: 320px)" srcset="images/country/country-app-preview-smart-p.jpg">
+                            <img class="preview__image" src="images/country/country-app-ipad.png" alt="country app miniature">
+                        </picture>
+                    </div>
+                    <!-- preview koniec -->
+                    <!-- details początek -->
+                    <div class="ieFlexFix">
+                        <div data-content="details" class="project__details details col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 details__text">
+                                    <!-- treść -->
+                                    <h3 class="details__title">Country App</h3>
+                                    <p class="details__category">Single Page App | Juni 2018</p>
+                                    <p class="details__text">Country is a&nbsp;classic expample of&nbsp;Single Page Applications. It presents the&nbsp;basic
+                                        information about the&nbsp;selected country in&nbsp;an&nbsp;interesting way.</p>
+                                    <p class="details__text">The app was created with React and React Router libraries, and entire rendering lies with a&nbsp;client
+                                        side. Information about countries are&nbsp;loaded from *.json file. A&nbsp;user can filter the list of&nbsp;countries
+                                        depending on&nbsp;a&nbsp;chosen continent. Clicking the&nbsp;flag app enables viewing a&nbsp;proper component that
+                                        presents detailed information about a&nbsp;chosen country. There are also buttons for&nbsp;removing a&nbsp;country from
+                                        the list. By&nbsp;using the&nbsp;contact component, you can go to&nbsp;my portfolio or&nbsp;send me an&nbsp;e-mail. You
+                                        can switch between main components using navbar on&nbsp;top.</p>
+                                    <p class="details__text">The process of&nbsp;creation of&nbsp;this application has helped me to&nbsp;understand the
+                                        philosophy of SPA, as&nbsp;well as&nbsp;to practice the most popular frontend JavaScript libraries.</p>
+                                    <footer class="details__footer">
+                                        <a href="https://github.com/MariuszSzlachta/country-app" rel="noopener" target="_blank" class="details__link">view
+                                            code</a>
+                                        <a href="https://mariuszszlachta.github.io/country-app/" target="_blank" rel="noopener" class="details__link">go
+                                            live</a>
+                                    </footer>
+                                </div>
+                                <div data-details-animation="4" class="col-lg-6 col-md-12 details__animation details__animation--slow">
+                                </div>
+                                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                                    <span class="button__text">Project preview</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--flex fix-->
+                    <!-- details koniec -->
                 </div>
-              </div>
-            </div><!--flex fix-->
-            <!-- details koniec -->
-          </div>
-        </div>
-        <!-- end of cell three -->
-        <!-- Intranet -->
-        <div class="carousel-cell">
-          <div class="project">
-            <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category wow fadeInDownBig">Single Page App</p>
-              <h3 class="headings__title wow fadeInDown">Intranet</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
-                  <span class="button__text">Project details</span>
-                  <i class=" button__icon fas fa-long-arrow-alt-right"></i>
-              </a>
             </div>
-            <!-- preview początek -->
-            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
-              <picture class="preview__picture">
-                <source media="(min-width: 768px)" srcset="images/intranet/intranet-ipad.png">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/intranet/intranet-preview-smart-l.png">
-                <source media="(min-width: 320px)" srcset="images/intranet/intranet-preview-smart-p.png">
-                <img class="preview__image" src="images/intranet/intranet-full.png" alt="Intranet app miniature">
-              </picture>
-            </div>
-            <!-- preview koniec -->
-            <!-- details początek -->
-            <div class="ieFlexFix">
-              <div data-content="details" class="project__details details col-lg-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text">
-                    <!-- treść -->
-                    <h3 class="details__title">Intranet</h3>
-                    <p class="details__category">Single Page App | November 2018</p>
-                    <p class="details__text">Intranet is a&nbsp;Single Page Application. It&nbsp;contains boilerplates of&nbsp;subpages for future development.</p>
-                    <p class="details__text">One of the subpages is&nbsp;already implemented and this subpage is&nbsp;Toolbox. Toolbox presents categorized lists of&nbsp;internet links and allows you to&nbsp;filter that lists via category name and&nbsp;link name. The App is also easy to&nbsp;nationalize. I've' used React Intl to&nbsp;implement this functionality. The Language can be&nbsp;switched by a&nbsp;single click in&nbsp;button inside the footer.</p>
-                    <p class="details__text">Creating this app allowed me to dive in React and React Router in their newest versions. I've learned how to&nbsp;use React Motion library with React Router to&nbsp;create cool transitions between rendered components. I've styled my app using SCSS modules. Intranet is ready to&nbsp;use not only on a&nbsp;desktop but also on&nbsp;mobile devices and thanks to PWA mechanism It can be used offline.</p>
-                    <footer class="details__footer">
-                      <a href="https://github.com/MariuszSzlachta/intranet" rel="noopener" target="_blank" class="details__link">view code</a>
-                      <a href="https://mariuszszlachta.github.io/intranet/" target="_blank" rel="noopener" class="details__link">go live</a>
-                    </footer>
-                  </div>
-                  <div data-details-animation="5" class="col-lg-6 col-md-12 details__animation details__animation--slow">
-                  </div>
-                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
-                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
-                    <span class="button__text">Project preview</span>
-                  </a>
+            <!-- end of cell three -->
+            <!-- Intranet -->
+            <div class="carousel-cell">
+                <div class="project">
+                    <div data-content="headings" class="project__headings headings headings--active">
+                        <p class="headings__category wow fadeInDownBig">Single Page App</p>
+                        <h3 class="headings__title wow fadeInDown">Intranet</h3>
+                        <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                            <span class="button__text">Project details</span>
+                            <i class=" button__icon fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <!-- preview początek -->
+                    <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+                        <picture class="preview__picture">
+                            <source media="(min-width: 768px)" srcset="images/intranet/intranet-ipad.png">
+                            <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/intranet/intranet-preview-smart-l.png">
+                            <source media="(min-width: 320px)" srcset="images/intranet/intranet-preview-smart-p.png">
+                            <img class="preview__image" src="images/intranet/intranet-full.png" alt="Intranet app miniature">
+                        </picture>
+                    </div>
+                    <!-- preview koniec -->
+                    <!-- details początek -->
+                    <div class="ieFlexFix">
+                        <div data-content="details" class="project__details details col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 details__text">
+                                    <!-- treść -->
+                                    <h3 class="details__title">Intranet</h3>
+                                    <p class="details__category">Single Page App | November 2018</p>
+                                    <p class="details__text">Intranet is a&nbsp;Single Page Application. It&nbsp;contains boilerplates of&nbsp;subpages for
+                                        future development.</p>
+                                    <p class="details__text">One of the subpages is&nbsp;already implemented and this subpage is&nbsp;Toolbox. Toolbox presents
+                                        categorized lists of&nbsp;internet links and allows you to&nbsp;filter that lists via category name and&nbsp;link name.
+                                        The App is also easy to&nbsp;nationalize. I've' used React Intl to&nbsp;implement this functionality. The Language can
+                                        be&nbsp;switched by a&nbsp;single click in&nbsp;button inside the footer.</p>
+                                    <p class="details__text">Creating this app allowed me to dive in React and React Router in their newest versions. I've
+                                        learned how to&nbsp;use React Motion library with React Router to&nbsp;create cool transitions between rendered
+                                        components. I've styled my app using SCSS modules. Intranet is ready to&nbsp;use not only on a&nbsp;desktop but also on&nbsp;mobile
+                                        devices and thanks to PWA mechanism It can be used offline.</p>
+                                    <footer class="details__footer">
+                                        <a href="https://github.com/MariuszSzlachta/intranet" rel="noopener" target="_blank" class="details__link">view code</a>
+                                        <a href="https://mariuszszlachta.github.io/intranet/" target="_blank" rel="noopener" class="details__link">go live</a>
+                                    </footer>
+                                </div>
+                                <div data-details-animation="5" class="col-lg-6 col-md-12 details__animation details__animation--slow">
+                                </div>
+                                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                                    <span class="button__text">Project preview</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--flex fix-->
+                    <!-- details koniec -->
                 </div>
-              </div>
-            </div><!--flex fix-->
-            <!-- details koniec -->
-          </div>
-        </div>
-        <!-- end of cell three -->
-        <!-- Books -->
-        <div class="carousel-cell">
-          <div class="project">
-            <div data-content="headings" class="project__headings headings headings--active">
-              <p class="headings__category wow fadeInDownBig">SINGLE PAGE APP with DnD</p>
-              <h3 class="headings__title wow fadeInDown">Books</h3>
-              <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
-                  <span class="button__text">Project details</span>
-                  <i class=" button__icon fas fa-long-arrow-alt-right"></i>
-              </a>
             </div>
-            <!-- preview początek -->
-            <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
-              <picture class="preview__picture">
-                <source media="(min-width: 768px)" srcset="images/books/books-preview-ipad.png">
-                <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/books/books-preview-ipad.png">
-                <source media="(min-width: 320px)" srcset="images/books/books-preview-smart-p.png">
-                <img class="preview__image" src="images/books/books-preview-ipad.png" alt="Books app miniature">
-              </picture>
-            </div>
-            <!-- preview koniec -->
-            <!-- details początek -->
-            <div class="ieFlexFix">
-              <div data-content="details" class="project__details details col-lg-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 details__text">
-                    <!-- treść -->
-                    <h3 class="details__title">Books</h3>
-                    <p class="details__category">Single Page App | December 2018</p>
-                    <p class="details__text">Book app is an&nbsp;interesting concept of&nbsp;presentation data from external API, but it&nbsp;is&nbsp;also a&nbsp;challenge with implementation drag and drop mechanism without using HTML5 DnD API or any other JavaScript plugins.</p>
-                    <p class="details__text">This project has stimulated me to&nbsp;be creative and&nbsp;it has encouraged me to&nbsp;get more knowledge about JavaScript. During the creation of this app, I&nbsp;was able to apply MVP (Minimum Valuable Product) pattern. To do so&nbsp;I&nbsp;have decided to start from scratch, so I&nbsp;have prepared tools and data. Then I&nbsp;got the idea about dnd and fortunately, it worked. My next steps were a&nbsp;migration the apps state to the Redux and get data from external free API, because at the beginning I&nbsp;have been using a *.json file with dummy data. My last steps were styling the app in a&nbsp;fancy way, add PWA mechanism and deploy the app on&nbsp;GitHub pages. Since my drag and drop algorithm has been finished the app became MVP.
-                    </p>
-                    <p class="details__text">This project wasn't that hard to&nbsp;implement but pushed me to&nbsp;think more about common and&nbsp;repeating actions in&nbsp;JavaScript. And also it allowed me to combine regular event listeners with their equivalents in&nbsp;React. It was a&nbsp;great fun for me.</p>
-                    <footer class="details__footer">
-                      <a href="https://github.com/MariuszSzlachta/books" rel="noopener" target="_blank" class="details__link">view code</a>
-                      <a href="https://mariuszszlachta.github.io/books/" target="_blank" rel="noopener" class="details__link">go live</a>
-                    </footer>
-                  </div>
-                  <div data-details-animation="6" class="col-lg-6 col-md-12 details__animation details__animation--very-slow">
-                  </div>
-                  <a href="javascript:;" data-get="preview" class="details__button button" role="button">
-                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
-                    <span class="button__text">Project preview</span>
-                  </a>
+            <!-- end of cell three -->
+            <!-- Books -->
+            <div class="carousel-cell">
+                <div class="project">
+                    <div data-content="headings" class="project__headings headings headings--active">
+                        <p class="headings__category wow fadeInDownBig">SINGLE PAGE APP with DnD</p>
+                        <h3 class="headings__title wow fadeInDown">Books</h3>
+                        <a href="javascript:;" data-get="details" class="headings__button button wow fadeInRight" role="button">
+                            <span class="button__text">Project details</span>
+                            <i class=" button__icon fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                    <!-- preview początek -->
+                    <div data-content="preview" class="project__preview preview preview--active col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+                        <picture class="preview__picture">
+                            <source media="(min-width: 768px)" srcset="images/books/books-preview-ipad.png">
+                            <source media="(min-width: 320px) and (orientation: landscape)" srcset="images/books/books-preview-ipad.png">
+                            <source media="(min-width: 320px)" srcset="images/books/books-preview-smart-p.png">
+                            <img class="preview__image" src="images/books/books-preview-ipad.png" alt="Books app miniature">
+                        </picture>
+                    </div>
+                    <!-- preview koniec -->
+                    <!-- details początek -->
+                    <div class="ieFlexFix">
+                        <div data-content="details" class="project__details details col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 details__text">
+                                    <!-- treść -->
+                                    <h3 class="details__title">Books</h3>
+                                    <p class="details__category">Single Page App | December 2018</p>
+                                    <p class="details__text">Book app is an&nbsp;interesting concept of&nbsp;presentation data from external API, but it&nbsp;is&nbsp;also
+                                        a&nbsp;challenge with implementation drag and drop mechanism without using HTML5 DnD API or any other JavaScript
+                                        plugins.</p>
+                                    <p class="details__text">This project has stimulated me to&nbsp;be creative and&nbsp;it has encouraged me to&nbsp;get more
+                                        knowledge about JavaScript. During the creation of this app, I&nbsp;was able to apply MVP (Minimum Valuable Product)
+                                        pattern. To do so&nbsp;I&nbsp;have decided to start from scratch, so I&nbsp;have prepared tools and data. Then I&nbsp;got
+                                        the idea about dnd and fortunately, it worked. My next steps were a&nbsp;migration the apps state to the Redux and get
+                                        data from external free API, because at the beginning I&nbsp;have been using a *.json file with dummy data. My last
+                                        steps were styling the app in a&nbsp;fancy way, add PWA mechanism and deploy the app on&nbsp;GitHub pages. Since my drag
+                                        and drop algorithm has been finished the app became MVP.
+                                    </p>
+                                    <p class="details__text">This project wasn't that hard to&nbsp;implement but pushed me to&nbsp;think more about common and&nbsp;repeating
+                                        actions in&nbsp;JavaScript. And also it allowed me to combine regular event listeners with their equivalents in&nbsp;React.
+                                        It was a&nbsp;great fun for me.</p>
+                                    <footer class="details__footer">
+                                        <a href="https://github.com/MariuszSzlachta/books" rel="noopener" target="_blank" class="details__link">view code</a>
+                                        <a href="https://mariuszszlachta.github.io/books/" target="_blank" rel="noopener" class="details__link">go live</a>
+                                    </footer>
+                                </div>
+                                <div data-details-animation="6" class="col-lg-6 col-md-12 details__animation details__animation--very-slow">
+                                </div>
+                                <a href="javascript:;" data-get="preview" class="details__button button" role="button">
+                                    <i class=" button__icon button__icon--reverse fas fa-long-arrow-alt-left"></i>
+                                    <span class="button__text">Project preview</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--flex fix-->
+                    <!-- details koniec -->
                 </div>
-              </div>
-            </div><!--flex fix-->
-            <!-- details koniec -->
-          </div>
+            </div>
+            <!-- end of cell three -->
         </div>
-        <!-- end of cell three -->
-      </div>
     </div>
-  </section>
-  <footer id ="contact" class="footer contact">
+</section>
+<footer id="contact" class="footer contact">
     <div class="container flex-col">
-      <h2 class="footer__title wow moveIn">Contact</h2>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 outer">
-          <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form wow moveIn">
-            <div class="row row--full-width contact-form__inner">
-                <div class="col-lg-6 col-sm-12 contact-form__group">
-                  <input id="input-name" type="text" name="name" class="contact-form__input" required>
-                  <label for="input-name" class="contact-form__label label"><span class="label__text">Your name</span></label>
-                </div>
-                <div class="col-lg-6 col-sm-12 contact-form__group">
-                  <input id="input-email" type="email" name="_replyto" class="contact-form__input" required>
-                  <label for="input-email" class="contact-form__label label"><span class="label__text">Your email</span></label>
-                </div>
-                <div class="col-lg-12 contact-form__group">
-                  <input id="input-subject" type="text" class="contact-form__input" required>
-                  <label for="input-subject" class="contact-form__label label"><span class="label__text">Subject</span></label>
-                </div>
-                <div class="col-lg-12 contact-form__group">
-                  <textarea name="message" id="input-message" cols="30" rows="2" class="contact-form__textarea" required></textarea>
-                  <label for="input-message" class="contact-form__label label contact-form__label--textarea"><span class="label__text label__text--textarea">Your message</span></label>
-                </div>
-                <button class="contact-form__submit submit">
-                  <span class="submit__text">Get in touch</span>
-                  <i class="contact-form__icon icon fas fa-long-arrow-alt-right"></i>
-                </button>
+        <h2 class="footer__title wow moveIn">Contact</h2>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 outer">
+                <form action="https://formspree.io/mariusz.szlachta@yahoo.com" method="POST" class="contact-form wow moveIn">
+                    <div class="row row--full-width contact-form__inner">
+                        <div class="col-lg-6 col-sm-12 contact-form__group">
+                            <input id="input-name" type="text" name="name" class="contact-form__input" required>
+                            <label for="input-name" class="contact-form__label label"><span class="label__text">Your name</span></label>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 contact-form__group">
+                            <input id="input-email" type="email" name="_replyto" class="contact-form__input" required>
+                            <label for="input-email" class="contact-form__label label"><span class="label__text">Your email</span></label>
+                        </div>
+                        <div class="col-lg-12 contact-form__group">
+                            <input id="input-subject" type="text" class="contact-form__input" required>
+                            <label for="input-subject" class="contact-form__label label"><span class="label__text">Subject</span></label>
+                        </div>
+                        <div class="col-lg-12 contact-form__group">
+                            <textarea name="message" id="input-message" cols="30" rows="2" class="contact-form__textarea" required></textarea>
+                            <label for="input-message" class="contact-form__label label contact-form__label--textarea"><span
+                                    class="label__text label__text--textarea">Your message</span></label>
+                        </div>
+                        <button class="contact-form__submit submit">
+                            <span class="submit__text">Get in touch</span>
+                            <i class="contact-form__icon icon fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
-      <div class="footer__bar flex-center flex-row">
-        <p class="footer__copy">
-          <small>Mariusz Szlachta <span class="footer__copy--highlighted">&copy;</span></small>
-        </p>
-        <ul class="social-media">
-          <li class="social-media__item">
-            <a href="https://github.com/MariuszSzlachta" target="_blank" rel="noopener" class="social-media__link" aria-label="github">
-              <span class="fab fa-github"></span>
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a href="https://www.linkedin.com/in/mariusz-szlachta/" target="_blank" rel="noopener" class="social-media__link" aria-label="linkedin">
-              <span class="fab fa-linkedin-in"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="footer__bar flex-center flex-row">
+            <p class="footer__copy">
+                <small>Mariusz Szlachta <span class="footer__copy--highlighted">&copy;</span></small>
+            </p>
+            <ul class="social-media">
+                <li class="social-media__item">
+                    <a href="https://github.com/MariuszSzlachta" target="_blank" rel="noopener" class="social-media__link" aria-label="github">
+                        <span class="fab fa-github"></span>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a href="https://www.linkedin.com/in/mariusz-szlachta/" target="_blank" rel="noopener" class="social-media__link" aria-label="linkedin">
+                        <span class="fab fa-linkedin-in"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </footer>
-  <div class="modal">
+</footer>
+<div class="modal">
     <h2 class="modal__header">Info</h2>
     <p class="modal__text">Hi user of the Internet Explorer. To fully enjoy using this website please consider download more secure browser.</p>
     <div class="modal__link-container">
-      <a href="https://www.google.com/intl/pl_ALL/chrome/" target="_blank" rel="noopener" class="modal__link">Chrome</a>
-      <a href="https://www.mozilla.org/pl/firefox/new/" target="_blank" rel="noopener" class="modal__link">Firefox</a>
-      <a href="https://www.opera.com/pl/download" target="_blank" rel="noopener" class="modal__link">Opera</a>
+        <a href="https://www.google.com/intl/pl_ALL/chrome/" target="_blank" rel="noopener" class="modal__link">Chrome</a>
+        <a href="https://www.mozilla.org/pl/firefox/new/" target="_blank" rel="noopener" class="modal__link">Firefox</a>
+        <a href="https://www.opera.com/pl/download" target="_blank" rel="noopener" class="modal__link">Opera</a>
     </div>
     <button class="modal__close">close</button>
-  </div>
+</div>
 
-  <script src="public/vendor.bundle.min.js"></script>
-  <script src="public/script.bundle.min.js"></script>
-  <script>
+<script src="public/vendor.bundle.min.js"></script>
+<script src="public/script.bundle.min.js"></script>
+<script>
     const preloader = document.getElementById('preloader');
     const preloaderRect = document.querySelector('.preloader__rect');
 
-    window.addEventListener('load', function(){
-      preloader.classList.remove('preloader--active');
-      preloaderRect.classList.remove('preload');
-      new WOW({mobile: false}).init();
-      setTimeout(function(){
-        preloader.style.display = 'none';
-      },1000)
+    window.addEventListener('load', function () {
+        preloader.classList.remove('preloader--active');
+        preloaderRect.classList.remove('preload');
+        new WOW({mobile: false}).init();
+        setTimeout(function () {
+            preloader.style.display = 'none';
+        }, 1000)
     });
-    flkty.on('change', function(){
-      new WOW({mobile: false}).init();
+    flkty.on('change', function () {
+        new WOW({mobile: false}).init();
     });
 </script>
 </body>
